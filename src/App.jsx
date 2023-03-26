@@ -1,7 +1,8 @@
 import React from "react";
+import About from "./components/About";
+import Experience from "./components/Experience";
 import Header from "./components/header";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
 import Skills from "./components/Skills";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <div className="main__about-skills">
           <About />
           <Skills />
+          <Experience />
         </div>
       </main>
     </div>

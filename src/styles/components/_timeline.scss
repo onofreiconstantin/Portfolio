@@ -1,0 +1,61 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  &__job {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    background-image: linear-gradient(
+      to right,
+      $primary-color-light,
+      rgba($primary-color, 0.8)
+    );
+    padding: 2rem 4rem;
+    border-radius: 9px;
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: "\2193";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, +85%);
+      color: $primary-color-dark;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    &:not(:first-child):not(:last-child)::after {
+      transform: translate(calc(-50% - 2.5rem), +85%);
+    }
+
+    &:not(:first-child) {
+      margin-left: 5rem;
+
+      background-image: linear-gradient(
+        to right,
+        $secondary-color,
+        rgba($secondary-color-dark, 0.8)
+      );
+    }
+
+    &--content {
+      display: flex;
+      gap: 1rem;
+      position: relative;
+
+      p:first-child::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -15px;
+        width: 9px;
+        height: 9px;
+        background-color: $primary-color-dark;
+        border-radius: 50%;
+      }
+    }
+  }
+}

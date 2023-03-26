@@ -1,17 +1,17 @@
 import React, { useRef } from "react";
 import useCheckVisible from "../hooks/useCheckVisible";
-import reactLogo from "../resources/img/reactLogo.png";
-import nextLogo from "../resources/img/nextLogo.png";
-import javascriptLogo from "../resources/img/javascriptLogo.png";
-import htmlLogo from "../resources/img/htmlLogo.png";
 import cssLogo from "../resources/img/cssLogo.png";
+import gitLogo from "../resources/img/gitLogo.png";
+import htmlLogo from "../resources/img/htmlLogo.png";
+import javascriptLogo from "../resources/img/javascriptLogo.png";
+import languageLogo from "../resources/img/languageLogo.png";
+import muiLogo from "../resources/img/muiLogo.png";
+import nextLogo from "../resources/img/nextLogo.png";
+import nodeLogo from "../resources/img/nodeLogo.png";
+import otherSkillsLogo from "../resources/img/otherSkillsLogo.png";
+import reactLogo from "../resources/img/reactLogo.png";
 import scssLogo from "../resources/img/scssLogo.png";
 import tailwindLogo from "../resources/img/tailwindLogo.png";
-import muiLogo from "../resources/img/muiLogo.png";
-import gitLogo from "../resources/img/gitLogo.png";
-import nodeLogo from "../resources/img/nodeLogo.png";
-import languageLogo from "../resources/img/languageLogo.png";
-import otherSkillsLogo from "../resources/img/otherSkillsLogo.png";
 
 const Skills = () => {
   const parentRef = useRef(null);
