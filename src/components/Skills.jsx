@@ -78,7 +78,7 @@ const Skills = () => {
       logo: tailwindLogo,
       name: "Tailwind",
       skills: [
-        "Limited experience with versions 2 and 3, with a good knowledge about the basic functions",
+        "Limited experience with versions 2 and 3, with a good knowledge about the basic functions and classes",
       ],
     },
     {
