@@ -1,0 +1,39 @@
+.heading-primary {
+  font-size: 7rem;
+  word-spacing: 1rem;
+  color: $tertiary-color-light;
+  transition: all 0.2s;
+  font-weight: 700;
+
+  &:hover {
+    transform: rotate(-0.5deg);
+    color: $primary-color;
+  }
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  word-spacing: 1rem;
+  color: $tertiary-color-light;
+  transition: all 0.2s;
+  font-weight: 700;
+
+  &:hover {
+    transform: rotate(-0.5deg);
+    color: $primary-color;
+  }
+}
+
+.heading-tertiary {
+  font-size: 3.5rem;
+  word-spacing: 0.5rem;
+  color: $color-grey-dark;
+  font-weight: 500;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: $color-grey-dark;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,21 @@
+.u-heading-alternative {
+  color: $color-white;
+
+  &:hover {
+    color: $tertiary-color-light;
+  }
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-paragraph-skills {
+  hyphens: auto;
+  font-size: 1.4rem;
+}
+
+.u-animation-delay {
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}

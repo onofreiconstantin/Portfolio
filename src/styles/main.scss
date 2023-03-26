@@ -1,0 +1,22 @@
+//UTILITIES
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/typography";
+@import "utilities/animations";
+@import "utilities/utilities";
+
+//BASE
+@import "./base/base";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/navbar";
+@import "./layout/about";
+@import "./layout/skills";
+
+//PAGES
+@import "./pages/main-page";
+
+//COMPONENTS
+@import "./components/buttons.scss";
+@import "./components/card.scss";

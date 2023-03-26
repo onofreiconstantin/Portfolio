@@ -1,0 +1,42 @@
+.app {
+  position: relative;
+
+  .main {
+    margin: 0 auto;
+    width: 90%;
+
+    &__about-skills {
+      box-shadow: 0 3px 8px rgba($color: $color-black, $alpha: 0.2);
+      border-radius: 3px;
+      overflow: hidden;
+
+      .section-about {
+        background-image: linear-gradient(
+            to right,
+            rgba($color-white, 0.5),
+            rgba($color-white, 0.8)
+          ),
+          url("../resources/img/computer-science.jpg");
+        background-size: cover;
+        background-position: center;
+
+        padding: 5rem 7.5rem 15rem 7.5rem;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10rem), 0 100%);
+      }
+
+      .section-skills {
+        background-image: linear-gradient(
+            to right,
+            rgba($primary-color-light, 1),
+            rgba($primary-color-light, 0.7)
+          ),
+          url("../resources/img/technologies.jpg");
+        background-size: cover;
+        background-position: center;
+
+        padding: 10rem 7.5rem 5rem 7.5rem;
+        margin-top: -10.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: linear-gradient(
+    to left,
+    $secondary-color,
+    $secondary-color-light
+  );
+}
