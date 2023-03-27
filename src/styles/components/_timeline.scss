@@ -1,7 +1,7 @@
 .timeline {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3.5rem;
 
   &__job {
     display: flex;
@@ -23,7 +23,7 @@
       bottom: 0;
       transform: translate(-50%, +85%);
       color: $primary-color-dark;
-      font-size: 3rem;
+      font-size: 4rem;
       font-weight: 600;
     }
 
@@ -41,6 +41,12 @@
       );
     }
 
+    &:first-child &--content {
+      p:first-child::before {
+        background-color: $tertiary-color-dark;
+      }
+    }
+
     &--content {
       display: flex;
       gap: 1rem;
@@ -49,10 +55,10 @@
       p:first-child::before {
         content: "";
         position: absolute;
-        top: 5px;
+        top: 6.5px;
         left: -15px;
-        width: 9px;
-        height: 9px;
+        width: 7px;
+        height: 7px;
         background-color: $primary-color-dark;
         border-radius: 50%;
       }

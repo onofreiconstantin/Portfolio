@@ -51,7 +51,13 @@
         margin-top: -10.5rem;
 
         padding: 5rem 7.5rem 15rem 7.5rem;
-        clip-path: polygon(0 0, 100% 0, 100% 100% 0 100%);
+        clip-path: polygon(0 0, 100% 10rem, 100% calc(100% - 10rem), 0 100%);
+      }
+
+      .section-projects {
+        padding: 10rem 7.5rem 15rem 7.5rem;
+        margin-top: -10.5rem;
+        clip-path: polygon(0 10rem, 100% 0, 100% 100%, 0 calc(100% - 10rem));
       }
     }
   }
