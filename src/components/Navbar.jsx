@@ -1,31 +1,32 @@
 import React, { useEffect, useState } from "react";
+import useScrollIntoView from "../hooks/useScrollIntoView";
 import { ReactComponent as PortfolioSvg } from "../resources/svg/portfolio.svg";
 
 const Navbar = () => {
   const linksData = [
     {
       id: 0,
-      link: "#",
+      link: document.querySelector(".section-about"),
       name: "About me",
     },
     {
       id: 1,
-      link: "#",
+      link: document.querySelector(".section-skills"),
       name: "Skills",
     },
     {
       id: 2,
-      link: "#",
+      link: document.querySelector(".section-experience"),
       name: "Experience",
     },
     {
       id: 3,
-      link: "#",
+      link: document.querySelector(".section-projects"),
       name: "Projects",
     },
     {
       id: 4,
-      link: "#",
+      link: document.querySelector(".section-contact"),
       name: "Contact me",
     },
   ];
@@ -60,9 +61,12 @@ const Navbar = () => {
           {linksData.map((linkData) => {
             return (
               <li className="nav__item" key={linkData.id}>
-                <a href={linkData.link} className="btn-nav">
+                <button
+                  className="btn-nav"
+                  onClick={() => useScrollIntoView(linkData.link)}
+                >
                   {linkData.name}
-                </a>
+                </button>
               </li>
             );
           })}

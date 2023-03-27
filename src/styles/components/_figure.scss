@@ -1,0 +1,57 @@
+.figure {
+  width: 30rem;
+  height: 55rem;
+  background-color: $color-white;
+  border-radius: 9px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 1px 2px rgba($color: $color-black, $alpha: 0.15);
+
+  &__img {
+    width: 100%;
+    height: 20.5rem;
+
+    &--content {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+      border-bottom: 0.25px solid rgba($color: $color-black, $alpha: 0.25);
+    }
+  }
+
+  &__content {
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 34rem;
+    gap: 2rem;
+
+    &--buttons {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      margin-top: auto;
+    }
+
+    &--button {
+      svg {
+        width: 3.5rem;
+        height: 3.5rem;
+        display: inline-block;
+        stroke: $primary-color;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          stroke: $tertiary-color;
+          transform: scale(1.075);
+        }
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-1.75rem) scale(1.035);
+    box-shadow: 0 5px 10px rgba($color: $color-black, $alpha: 0.2);
+  }
+}

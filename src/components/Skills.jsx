@@ -135,7 +135,7 @@ const Skills = () => {
       <div className="skills">
         <div className="skills__header">
           <h2
-            className={`heading-secondary u-heading-alternative ${
+            className={`heading-secondary u-heading-dark ${
               isVisible && "rightToLeft u-animation-delay"
             }`}
           >

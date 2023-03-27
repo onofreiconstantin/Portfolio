@@ -24,8 +24,11 @@
 }
 
 .btn-nav {
+  &,
   &:link,
   &:visited {
+    border: none;
+    cursor: pointer;
     position: relative;
     display: inline-block;
     text-decoration: none;
@@ -36,6 +39,7 @@
     font-weight: 700;
     border: none;
     transition: all 0.2s;
+    background-color: transparent;
   }
 
   &:hover,
@@ -43,6 +47,7 @@
     color: $color-white;
   }
 
+  &::before,
   &:link::before,
   &:visited::before {
     content: "";
@@ -65,8 +70,11 @@
 }
 
 .btn-cv {
+  &,
   &:link,
   &:visited {
+    border: none;
+    cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
     color: $color-white;
@@ -86,13 +94,36 @@
     color: $tertiary-color-dark;
     background-color: $color-white;
     transform: translateY(-2px);
-    box-shadow: 0 2px 4px rgba($color: $color-black, $alpha: 0.15);
+    box-shadow: 0 3px 6px rgba($color: $color-black, $alpha: 0.2);
   }
 
   &:active {
     color: $tertiary-color-dark;
     background-color: $color-white;
     transform: translateY(1px);
-    box-shadow: 0 3px 6px rgba($color: $color-black, $alpha: 0.2);
+    box-shadow: 0 2px 4px rgba($color: $color-black, $alpha: 0.15);
+  }
+
+  &:disabled {
+    background-color: $color-grey-dark-light;
+    color: $color-grey-dark;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    background-color: $color-grey-dark-light;
+    color: $color-grey-dark;
+
+    &:hover {
+      background-color: inherit;
+      color: inherit;
+      cursor: default;
+    }
+
+    &:active {
+      background-color: inherit;
+      color: inherit;
+      box-shadow: none;
+    }
   }
 }
