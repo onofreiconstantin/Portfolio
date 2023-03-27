@@ -13,8 +13,8 @@
       .section-about {
         background-image: linear-gradient(
             to right,
-            rgba($color-white, 0.5),
-            rgba($color-white, 0.8)
+            rgba($color-white, 0.45),
+            rgba($color-white, 0.5)
           ),
           url("../resources/img/computer-science.jpg");
         background-size: cover;
@@ -55,9 +55,23 @@
       }
 
       .section-projects {
-        padding: 10rem 7.5rem 15rem 7.5rem;
         margin-top: -10.5rem;
         clip-path: polygon(0 10rem, 100% 0, 100% 100%, 0 calc(100% - 10rem));
+      }
+
+      .section-contact {
+        background-image: linear-gradient(
+            to right,
+            rgba($color-white, 0.6),
+            rgba($color-white, 0.85)
+          ),
+          url("../resources/img/contact.jpg");
+        background-size: cover;
+        background-position: center;
+        margin-top: -10.5rem;
+
+        padding: 5rem 7.5rem 15rem 7.5rem;
+        clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
       }
     }
   }

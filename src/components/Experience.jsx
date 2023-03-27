@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Xarrow from "react-xarrows";
 import useCheckVisible from "../hooks/useCheckVisible";
 
 const Experience = () => {
@@ -32,6 +33,7 @@ const Experience = () => {
           startDate: "01.01.2023",
           endDate: `${currentDate}`,
           position: "Junior II",
+          present: true,
         },
       ],
     },
@@ -46,6 +48,45 @@ const Experience = () => {
       (eDate.getMonth() - sDate.getMonth());
 
     return monthsDiff;
+  }
+
+  function renderArrow(parentId, childId, index, children) {
+    let startId;
+    let endId;
+    let startDirection;
+    let endDirection;
+
+    if (index === 0) {
+      startId = parentId;
+      endId = childId;
+    } else {
+      startId = children[index - 1].id;
+      endId = childId;
+    }
+
+    if (index % 2 === 0) {
+      startDirection = "right";
+      endDirection = "right";
+    } else {
+      startDirection = "left";
+      endDirection = "left";
+    }
+
+    return (
+      <Xarrow
+        start={startId}
+        end={endId}
+        startAnchor={startDirection}
+        endAnchor={endDirection}
+        color="#7dd3fc"
+        animateDrawing={true}
+        path="grid"
+        gridBreak="150%"
+        headShape="circle"
+        headSize={4}
+        zIndex={1}
+      />
+    );
   }
 
   return (
@@ -68,7 +109,10 @@ const Experience = () => {
           {experiencesData.map((experienceData) => {
             return (
               <div className="timeline" key={experienceData.id}>
-                <div className="timeline__job" id={experienceData.id}>
+                <div
+                  className="timeline__job u-margin-right"
+                  id={experienceData.id}
+                >
                   <div className="timeline__job--content">
                     <p className="paragraph u-paragraph-green">Company:</p>
                     <p className="paragraph">{experienceData.company}</p>
@@ -99,32 +143,48 @@ const Experience = () => {
                     </p>
                   </div>
                 </div>
-                {experienceData.positions.map((position) => {
+                {experienceData.positions.map((position, index, self) => {
                   return (
-                    <div
-                      className="timeline__job "
-                      key={position.id}
-                      id={position.id}
-                    >
-                      <div className="timeline__job--content">
-                        <p className="paragraph u-paragraph-blue">Job:</p>
-                        <p className="paragraph">{experienceData.job}</p>
+                    <React.Fragment key={position.id}>
+                      {renderArrow(experienceData.id, position.id, index, self)}
+                      <div
+                        className={`timeline__job ${
+                          index % 2 === 1 ? "u-margin-right" : "u-margin-left"
+                        }`}
+                        id={position.id}
+                      >
+                        <div className="timeline__job--content">
+                          <p className="paragraph u-paragraph-blue">Job:</p>
+                          <p className="paragraph">{experienceData.job}</p>
+                        </div>
+                        <div className="timeline__job--content">
+                          <p className="paragraph u-paragraph-blue">
+                            Position:
+                          </p>
+                          <p className="paragraph">{position.position}</p>
+                        </div>
+                        <div className="timeline__job--content">
+                          <p className="paragraph u-paragraph-blue">
+                            Start date:
+                          </p>
+                          <p className="paragraph">{position.startDate}</p>
+                        </div>
+                        <div className="timeline__job--content">
+                          <p className="paragraph u-paragraph-blue">
+                            End date:
+                          </p>
+                          <p className="paragraph">
+                            {`${position.endDate}
+                          ${
+                            position.hasOwnProperty("present") &&
+                            position.present
+                              ? " (present)"
+                              : ""
+                          }`}
+                          </p>
+                        </div>
                       </div>
-                      <div className="timeline__job--content">
-                        <p className="paragraph u-paragraph-blue">Position:</p>
-                        <p className="paragraph">{position.position}</p>
-                      </div>
-                      <div className="timeline__job--content">
-                        <p className="paragraph u-paragraph-blue">
-                          Start date:
-                        </p>
-                        <p className="paragraph">{position.startDate}</p>
-                      </div>
-                      <div className="timeline__job--content">
-                        <p className="paragraph u-paragraph-blue">End date:</p>
-                        <p className="paragraph">{position.endDate}</p>
-                      </div>
-                    </div>
+                    </React.Fragment>
                   );
                 })}
               </div>
