@@ -14,6 +14,24 @@
   }
 }
 
+.u-header-small {
+  @include small-desktop {
+    font-size: 3.65rem !important;
+  }
+
+  @include large-tablets {
+    font-size: 3.1rem !important;
+  }
+
+  @include small-devices {
+    font-size: 4.2rem !important;
+  }
+
+  @include small-phone {
+    font-size: 3.1rem !important;
+  }
+}
+
 .u-center-text {
   text-align: center !important;
 }
@@ -48,14 +66,23 @@
 
 .u-paragraph-copyright {
   color: $color-white !important;
+  font-size: 1.45rem !important;
 }
 
 .u-margin-left {
   margin-left: 5rem !important;
+
+  @include small-devices {
+    margin-left: 3.5rem !important;
+  }
 }
 
 .u-margin-right {
   margin-right: 5rem !important;
+
+  @include small-devices {
+    margin-right: 3.5rem !important;
+  }
 }
 
 .u-textarea {
@@ -67,11 +94,17 @@
   height: 100% !important;
 }
 
+.u-button-fixed-width {
+  width: 175px;
+  margin: 0 auto !important;
+}
+
 .u-btn-nav-alternative {
   &,
   &:link,
   &:visited {
     color: $color-white !important;
+    font-size: 1.25rem !important;
   }
 
   &:hover,

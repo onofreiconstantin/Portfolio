@@ -42,6 +42,10 @@
     background-color: transparent;
   }
 
+  @include small-tablets {
+    font-size: 1.425rem;
+  }
+
   &:hover,
   &:active {
     color: $color-white;

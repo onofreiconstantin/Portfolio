@@ -9,6 +9,14 @@
 html {
   font-family: "Inter", sans-serif;
   font-size: 62.5%;
+
+  @include large-tablets {
+    font-size: 56.25%;
+  }
+
+  @include small-devices {
+    font-size: 50%;
+  }
 }
 
 body {

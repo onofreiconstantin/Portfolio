@@ -16,14 +16,14 @@ const Experience = () => {
     {
       id: "0",
       company: "Mics Software Srl",
-      position: "Wordpress Developer (practice period)",
+      position: "Practice in Wordpress (practice period)",
       startDate: "01.06.2019",
       endDate: `31.06.2019`,
     },
     {
       id: "1",
       company: "RaisisSoftware",
-      position: "React Frontend Developer",
+      position: "React Front End Developer",
       startDate: "02.08.2022",
       present: true,
       endDate: `${currentDate}`,
