@@ -3,6 +3,14 @@
   height: 60vh;
   display: flex;
 
+  // @include large-tablets {
+  //   height: 50vh;
+  // }
+
+  // @include small-devices {
+  //   height: 40vh;
+  // }
+
   &__info {
     width: 45%;
     flex-shrink: 0;

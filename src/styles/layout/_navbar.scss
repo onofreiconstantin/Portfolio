@@ -17,6 +17,14 @@
     align-items: center;
     padding: 1rem 10rem;
     width: 100vw;
+
+    @include small-devices {
+      padding: 1rem 5rem;
+    }
+
+    @include phone-only {
+      padding: 1rem 2rem;
+    }
   }
 
   &__icon {
@@ -29,6 +37,19 @@
     align-items: center;
     list-style: none;
     gap: 2.5rem;
+    transition: all 0.4s;
+
+    @include small-tablets {
+      gap: 1.75rem;
+    }
+
+    @include small-devices {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateX(-100%);
+    }
   }
 
   &__item {

@@ -75,7 +75,7 @@ const Footer = () => {
           <p className="paragraph u-paragraph-copyright">
             Build by ONOFREI CONSTANTIN to be used as a portfolio. Copyright
             &copy; by Onofrei Constantin. You are 100% allowed to use this
-            webpage for personal use but not to claim it as your design.
+            webpage for personal use but not for any other reason.
           </p>
         </div>
       </div>

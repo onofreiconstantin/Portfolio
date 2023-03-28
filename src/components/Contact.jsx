@@ -106,14 +106,6 @@ const Contact = () => {
                     Phone
                   </label>
                 </div>
-                <button
-                  className="btn-cv"
-                  type="submit"
-                  value="Send"
-                  disabled={isSending}
-                >
-                  Submit
-                </button>
               </div>
               <div className="contact__form--column">
                 <div className="contact__form--input-group u-max-height">
@@ -130,6 +122,14 @@ const Contact = () => {
                   </label>
                 </div>
               </div>
+              <button
+                className="btn-cv u-button-fixed-width"
+                type="submit"
+                value="Send"
+                disabled={isSending}
+              >
+                Submit
+              </button>
             </form>
           </div>
           <div className="contact__column">

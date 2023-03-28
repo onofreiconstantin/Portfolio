@@ -19,6 +19,14 @@
     background-size: cover;
     background-position: center;
     padding: 10rem 7.5rem 15rem 7.5rem;
+
+    @include small-devices {
+      padding: 10rem 5rem 15rem 5rem;
+    }
+
+    @include phone-only {
+      padding: 10rem 2.5rem 15rem 2.5rem;
+    }
   }
 
   &__header {
@@ -28,6 +36,7 @@
 
   &__container {
     @include wrap-container;
+    gap: 4rem;
     position: relative;
     z-index: 1;
   }

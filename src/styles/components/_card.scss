@@ -4,6 +4,11 @@
   height: 38rem;
   position: relative;
 
+  @include phone-only {
+    width: 75%;
+    height: 50rem;
+  }
+
   &__front {
     @include card-styles;
   }
@@ -25,6 +30,10 @@
     width: 100%;
     height: 20.5rem;
 
+    @include phone-only {
+      height: 26rem;
+    }
+
     &--content {
       width: inherit;
       height: inherit;
@@ -38,6 +47,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include phone-only {
+      height: 21rem;
+    }
   }
 
   &__skills {

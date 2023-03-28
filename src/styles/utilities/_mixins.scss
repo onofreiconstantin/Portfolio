@@ -17,3 +17,39 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+@mixin small-desktop {
+  @media (max-width: 1350px) {
+    @content;
+  }
+}
+
+@mixin large-tablets {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin small-tablets {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin small-devices {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin phone-only {
+  @media (max-width: 650px) {
+    @content;
+  }
+}
+
+@mixin small-phone {
+  @media (max-width: 500px) {
+    @content;
+  }
+}

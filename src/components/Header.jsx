@@ -1,8 +1,8 @@
 import React from "react";
 import portfolioImage from "../resources/img/portfolio.png";
-import { ReactComponent as LinkedInSvg } from "../resources/svg/linkedIn.svg";
 import { ReactComponent as FacebookSvg } from "../resources/svg/facebook.svg";
 import { ReactComponent as InstagramSvg } from "../resources/svg/instagram.svg";
+import { ReactComponent as LinkedInSvg } from "../resources/svg/linkedIn.svg";
 
 const Header = () => {
   const linksData = [
@@ -27,14 +27,16 @@ const Header = () => {
     <header className="header">
       <div className="header__info">
         <h1 className="heading-primary leftToRight">Hello</h1>
-        <h2 className="heading-secondary leftToRight">
+        <h2 className="heading-secondary u-header-small leftToRight">
           I'm Onofrei Constantin
         </h2>
         <div className="header__info-skills">
-          <h2 className="heading-secondary leftToRight">
+          <h2 className="heading-secondary u-header-small leftToRight">
             Front End Developer in
           </h2>
-          <h2 className="heading-secondary leftToRight">React</h2>
+          <h2 className="heading-secondary u-header-small leftToRight">
+            React
+          </h2>
         </div>
         <div className="header__socials bottomToTop">
           {linksData.map((linkData) => {
