@@ -16,12 +16,6 @@ const About = () => {
           >
             About me
           </h2>
-          <a
-            href="#"
-            className={`btn-cv ${isVisible && "rightToLeft u-animation-delay"}`}
-          >
-            DOWNLOAD CV
-          </a>
         </div>
         <p
           className={`paragraph ${
