@@ -105,13 +105,13 @@
   }
 
   &:disabled {
-    background-color: $color-grey-dark-light;
+    background-color: $color-grey-light;
     color: $color-grey-dark;
   }
 
   &:disabled {
     pointer-events: none;
-    background-color: $color-grey-dark-light;
+    background-color: $color-grey-light;
     color: $color-grey-dark;
 
     &:hover {

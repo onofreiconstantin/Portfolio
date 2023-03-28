@@ -4,8 +4,9 @@
   .main {
     margin: 0 auto;
     width: 90%;
+    margin: 5rem auto 12.5rem auto;
 
-    &__about-skills {
+    &__container {
       box-shadow: 0 3px 8px rgba($color: $color-black, $alpha: 0.2);
       border-radius: 3px;
       overflow: hidden;

@@ -5,18 +5,22 @@
 
   &__job {
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     flex-wrap: wrap;
-    background-image: linear-gradient(
-      to right,
-      $primary-color-light,
-      rgba($primary-color, 0.8)
-    );
+
     padding: 2rem 5rem;
     border-radius: 9px;
     position: relative;
 
-    &:not(:first-child) {
+    &:nth-of-type(odd) {
+      background-image: linear-gradient(
+        to right,
+        $primary-color-light,
+        rgba($primary-color, 0.8)
+      );
+    }
+
+    &:nth-of-type(even) {
       background-image: linear-gradient(
         to right,
         $secondary-color,
@@ -24,9 +28,23 @@
       );
     }
 
-    &:first-child &--content {
-      p:first-child::before {
+    &:nth-of-type(odd) &--content {
+      p:first-child {
         color: $tertiary-color-dark;
+
+        &::before {
+          color: $tertiary-color-dark;
+        }
+      }
+    }
+
+    &:nth-of-type(even) &--content {
+      p:first-child {
+        color: $primary-color-dark;
+
+        &::before {
+          color: $primary-color-dark;
+        }
       }
     }
 
@@ -38,8 +56,7 @@
       p:first-child::before {
         content: "\2013";
         position: absolute;
-        left: -15px;
-        color: $primary-color-dark;
+        left: -12.5px;
       }
     }
   }
