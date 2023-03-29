@@ -7,7 +7,7 @@
     svg {
       width: 4rem;
       height: 4rem;
-      fill: $tertiary-color;
+      fill: $tertiary-color-light;
     }
   }
 
@@ -18,7 +18,7 @@
     svg {
       width: 4rem;
       height: 4rem;
-      fill: $primary-color;
+      fill: $tertiary-color;
     }
   }
 }
@@ -32,7 +32,7 @@
     position: relative;
     display: inline-block;
     text-decoration: none;
-    color: $tertiary-color-dark;
+    color: $tertiary-color;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 1.6rem;
@@ -87,7 +87,7 @@
     font-size: 1.6rem;
     font-weight: 700;
     transition: all 0.2s;
-    background-color: $tertiary-color-dark;
+    background-color: $tertiary-color;
     padding: 1rem 2.5rem;
     border-radius: 3px;
     display: inline-block;
@@ -95,14 +95,14 @@
   }
 
   &:hover {
-    color: $tertiary-color-dark;
+    color: $tertiary-color;
     background-color: $color-white;
     transform: translateY(-2px);
     box-shadow: 0 3px 6px rgba($color: $color-black, $alpha: 0.2);
   }
 
   &:active {
-    color: $tertiary-color-dark;
+    color: $tertiary-color;
     background-color: $color-white;
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba($color: $color-black, $alpha: 0.15);

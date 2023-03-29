@@ -9,14 +9,14 @@ import backgroundVideo from "../resources/video/backgroundVideo.mp4";
 
 const Projects = () => {
   const parentRef = useRef(null);
-  const { isVisible } = useCheckVisible(parentRef);
+  const { animateElement } = useCheckVisible(parentRef);
 
   const projectsData = [
     {
       id: 0,
       image: portfolioImage,
       name: "Portfolio",
-      link: "",
+      link: "https://portfolio-oc.netlify.app/",
       github: "https://github.com/Onofrei-Constantin/Portfolio",
       description:
         "It's my most recent work and my best in terms of styling. Here is where I tried to show what I learned in the past month in CSS, SCSS, and more.",
@@ -49,8 +49,8 @@ const Projects = () => {
         <div className="projects__wrapper">
           <div className="projects__header">
             <h2
-              className={`heading-secondary u-heading-dark ${
-                isVisible && "rightToLeft u-animation-delay"
+              className={`heading-secondary ${
+                animateElement && "rightToLeft u-animation-delay"
               }`}
             >
               Projects
@@ -58,7 +58,7 @@ const Projects = () => {
           </div>
           <div
             className={`projects__container ${
-              isVisible && "bottomToTop u-animation-delay"
+              animateElement && "bottomToTop u-animation-delay"
             }`}
           >
             {projectsData.map((projectData) => {

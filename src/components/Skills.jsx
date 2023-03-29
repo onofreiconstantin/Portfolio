@@ -15,7 +15,7 @@ import tailwindLogo from "../resources/img/tailwindLogo.png";
 
 const Skills = () => {
   const parentRef = useRef(null);
-  const { isVisible } = useCheckVisible(parentRef);
+  const { animateElement } = useCheckVisible(parentRef);
 
   const logosData = [
     {
@@ -135,8 +135,8 @@ const Skills = () => {
       <div className="skills">
         <div className="skills__header">
           <h2
-            className={`heading-secondary u-heading-dark ${
-              isVisible && "rightToLeft u-animation-delay"
+            className={`heading-secondary ${
+              animateElement && "rightToLeft u-animation-delay"
             }`}
           >
             Skills
@@ -144,7 +144,7 @@ const Skills = () => {
         </div>
         <div
           className={`skills__container ${
-            isVisible && "bottomToTop u-animation-delay"
+            animateElement && "bottomToTop u-animation-delay"
           }`}
         >
           {logosData.map((logoData) => {

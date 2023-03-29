@@ -2,22 +2,21 @@
   width: 100%;
   height: 60vh;
   display: flex;
-
-  // @include large-tablets {
-  //   height: 50vh;
-  // }
-
-  // @include small-devices {
-  //   height: 40vh;
-  // }
+  position: relative;
 
   &__info {
-    width: 45%;
+    width: 50%;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    padding: 0 5rem;
+
+    @include small-devices {
+      width: 100%;
+      text-align: center;
+    }
 
     &-skills {
       h2 {
@@ -51,8 +50,19 @@
     display: flex;
     flex-shrink: 0;
     margin: 0 auto;
-    width: 45%;
-    height: 90%;
+    width: 50%;
+    height: 100%;
+    transition: all 0.4s ease;
+
+    @include small-devices {
+      width: 90%;
+      position: absolute;
+      opacity: 0.1;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+      z-index: -1;
+    }
 
     &--content {
       width: 100%;
@@ -65,5 +75,9 @@
     margin-top: 3rem;
     display: flex;
     gap: 4rem;
+
+    @include small-devices {
+      justify-content: center;
+    }
   }
 }
