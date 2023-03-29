@@ -3,7 +3,7 @@ import useCheckVisible from "../hooks/useCheckVisible";
 
 const About = () => {
   const parentRef = useRef(null);
-  const { isVisible } = useCheckVisible(parentRef);
+  const { animateElement } = useCheckVisible(parentRef);
 
   return (
     <section className="section-about" ref={parentRef}>
@@ -11,7 +11,7 @@ const About = () => {
         <div className="about__header">
           <h2
             className={`heading-secondary ${
-              isVisible && "leftToRight u-animation-delay"
+              animateElement && "leftToRight u-animation-delay"
             }`}
           >
             About me
@@ -19,7 +19,7 @@ const About = () => {
         </div>
         <p
           className={`paragraph ${
-            isVisible && "bottomToTop u-animation-delay"
+            animateElement && "bottomToTop u-animation-delay"
           }`}
         >
           I'm a Junior Front End Developer in React with a Computer Science

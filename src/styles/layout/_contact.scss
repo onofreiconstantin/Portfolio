@@ -36,10 +36,15 @@
       }
     }
 
+    @include phone-only {
+      padding: 4rem 2rem;
+    }
+
     &--column {
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      margin-bottom: 2rem;
     }
 
     &--input-group {

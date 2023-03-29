@@ -27,16 +27,12 @@ const Header = () => {
     <header className="header">
       <div className="header__info">
         <h1 className="heading-primary leftToRight">Hello</h1>
-        <h2 className="heading-secondary u-header-small leftToRight">
+        <h2 className="heading-secondary leftToRight">
           I'm Onofrei Constantin
         </h2>
         <div className="header__info-skills">
-          <h2 className="heading-secondary u-header-small leftToRight">
-            Front End Developer in
-          </h2>
-          <h2 className="heading-secondary u-header-small leftToRight">
-            React
-          </h2>
+          <h2 className="heading-secondary leftToRight">Front End</h2>
+          <h2 className="heading-secondary leftToRight">Developer</h2>
         </div>
         <div className="header__socials bottomToTop">
           {linksData.map((linkData) => {

@@ -4,7 +4,7 @@ import useCheckVisible from "../hooks/useCheckVisible";
 
 const Experience = () => {
   const parentRef = useRef(null);
-  const { isVisible } = useCheckVisible(parentRef);
+  const { animateElement } = useCheckVisible(parentRef);
 
   const currentDate = new Date().toLocaleDateString("ro-RO", {
     day: "2-digit",
@@ -29,17 +29,6 @@ const Experience = () => {
       endDate: `${currentDate}`,
     },
   ];
-
-  function calculateMonths(startDate, endDate) {
-    const sDate = new Date(startDate.split(".").reverse().join("-"));
-    const eDate = new Date(endDate.split(".").reverse().join("-"));
-
-    const monthsDiff =
-      (eDate.getFullYear() - sDate.getFullYear()) * 12 +
-      (eDate.getMonth() - sDate.getMonth());
-
-    return monthsDiff;
-  }
 
   function renderArrow(endId, index, children) {
     if (index === 0) return;
@@ -79,7 +68,7 @@ const Experience = () => {
         <div className="experience__header">
           <h2
             className={`heading-secondary ${
-              isVisible && "leftToRight u-animation-delay"
+              animateElement && "leftToRight u-animation-delay"
             }`}
           >
             Experience
@@ -87,7 +76,7 @@ const Experience = () => {
         </div>
         <div
           className={`experience__container ${
-            isVisible && "bottomToTop u-animation-delay"
+            animateElement && "bottomToTop u-animation-delay"
           }`}
         >
           <div className="timeline">
@@ -123,12 +112,6 @@ const Experience = () => {
                               ? " (present)"
                               : ""
                           }`}
-                      </p>
-                    </div>
-                    <div className="timeline__job--content">
-                      <p className="paragraph ">Months in the company:</p>
-                      <p className="paragraph">
-                        {calculateMonths(position.startDate, position.endDate)}
                       </p>
                     </div>
                   </div>

@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 
 const useCheckVisible = (parentRef) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [animateElement, setAnimateElement] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
-      console.log("se seteaza true");
       setIsVisible(entry.isIntersecting);
     });
 
@@ -18,9 +18,13 @@ const useCheckVisible = (parentRef) => {
         observer.unobserve(parentRef.current);
       }
     };
-  });
+  }, []);
 
-  return { isVisible };
+  if (isVisible && !animateElement) {
+    setAnimateElement(true);
+  }
+
+  return { animateElement };
 };
 
 export default useCheckVisible;

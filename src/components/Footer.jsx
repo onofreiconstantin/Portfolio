@@ -5,7 +5,7 @@ import { ReactComponent as PortfolioSvg } from "../resources/svg/portfolio.svg";
 
 const Footer = () => {
   const parentRef = useRef(null);
-  const { isVisible } = useCheckVisible(parentRef);
+  const { animateElement } = useCheckVisible(parentRef);
 
   const linksData = [
     {
@@ -39,14 +39,14 @@ const Footer = () => {
     <footer className="footer" ref={parentRef}>
       <div
         className={`footer__logo ${
-          isVisible && "bottomToTop u-animation-delay"
+          animateElement && "bottomToTop u-animation-delay"
         }`}
       >
         <PortfolioSvg />
       </div>
       <div
         className={`footer__column ${
-          isVisible && "leftToRight u-animation-delay"
+          animateElement && "leftToRight u-animation-delay"
         }`}
       >
         <div className="footer__wrapper">
@@ -68,14 +68,15 @@ const Footer = () => {
       </div>
       <div
         className={`footer__column ${
-          isVisible && "rightToLeft u-animation-delay"
+          animateElement && "rightToLeft u-animation-delay"
         }`}
       >
         <div className="footer__wrapper">
           <p className="paragraph u-paragraph-copyright">
             Build by ONOFREI CONSTANTIN to be used as a portfolio. Copyright
-            &copy; by Onofrei Constantin. You are 100% allowed to use this
-            webpage for personal use but not for any other reason.
+            &copy; by Onofrei Constantin. You can contact me at the number
+            0757258652, through email at constantin.onofrei22@gamil.com or via
+            the contact form.
           </p>
         </div>
       </div>

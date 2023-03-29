@@ -7,7 +7,7 @@ import coddingImage from "../resources/img/contact-codding.jpg";
 const Contact = () => {
   const formRef = useRef(null);
   const parentRef = useRef(null);
-  const { isVisible } = useCheckVisible(parentRef);
+  const { animateElement } = useCheckVisible(parentRef);
   const [isSending, setIsSending] = useState(false);
 
   const sendEmail = (e) => {
@@ -40,7 +40,7 @@ const Contact = () => {
         <div className="contact__header">
           <h2
             className={`heading-secondary ${
-              isVisible && "leftToRight u-animation-delay"
+              animateElement && "leftToRight u-animation-delay"
             }`}
           >
             Contact me
@@ -48,7 +48,7 @@ const Contact = () => {
         </div>
         <div
           className={`contact__container ${
-            isVisible && "bottomToTop u-animation-delay"
+            animateElement && "bottomToTop u-animation-delay"
           }`}
         >
           <div className="contact__column">
@@ -123,7 +123,7 @@ const Contact = () => {
                 </div>
               </div>
               <button
-                className="btn-cv u-button-fixed-width"
+                className="btn-cv "
                 type="submit"
                 value="Send"
                 disabled={isSending}
