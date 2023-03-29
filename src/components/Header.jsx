@@ -49,7 +49,7 @@ const Header = () => {
           })}
         </div>
       </div>
-      <div className="header__image rightToLeft">
+      <div className="header__image">
         <img
           src={portfolioImage}
           alt="Portfolio Image"
