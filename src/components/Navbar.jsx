@@ -1,35 +1,10 @@
 import React, { useEffect, useState } from "react";
+import useLinksData from "../hooks/useLinksData";
 import useScrollIntoView from "../hooks/useScrollIntoView";
 import { ReactComponent as PortfolioSvg } from "../resources/svg/portfolio.svg";
 
 const Navbar = () => {
-  const linksData = [
-    {
-      id: 0,
-      link: document.querySelector(".section-about"),
-      name: "About me",
-    },
-    {
-      id: 1,
-      link: document.querySelector(".section-skills"),
-      name: "Skills",
-    },
-    {
-      id: 2,
-      link: document.querySelector(".section-experience"),
-      name: "Experience",
-    },
-    {
-      id: 3,
-      link: document.querySelector(".section-projects"),
-      name: "Projects",
-    },
-    {
-      id: 4,
-      link: document.querySelector(".section-contact"),
-      name: "Contact me",
-    },
-  ];
+  const { linksData } = useLinksData();
 
   const [prevScrollY, setPrevScrollY] = useState(0);
   const [displayNavbar, setDisplayNavbar] = useState(true);
