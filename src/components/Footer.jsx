@@ -37,11 +37,7 @@ const Footer = () => {
 
   return (
     <footer className="footer" ref={parentRef}>
-      <div
-        className={`footer__logo ${
-          animateElement && "bottomToTop u-animation-delay"
-        }`}
-      >
+      <div className="footer__logo">
         <PortfolioSvg />
       </div>
       <div
