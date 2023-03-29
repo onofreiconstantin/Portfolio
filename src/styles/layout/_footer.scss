@@ -30,14 +30,12 @@
   }
 
   &__column {
-    margin: 0 auto;
-    padding: 17.5rem 2rem 14.5rem 2rem;
-    width: 100%;
+    margin: 17.5rem 2rem 14.5rem 2rem;
     display: flex;
     justify-content: center;
 
     @include phone-only {
-      padding: 13.5rem 2rem 5rem 2rem;
+      margin: 13.5rem 2rem 5rem 2rem;
     }
   }
 
@@ -45,7 +43,6 @@
     border-top: 2px solid rgba($color: $color-grey-light, $alpha: 0.4);
     padding-top: 3rem;
     max-width: 60rem;
-    width: inherit;
 
     @include small-desktop {
       max-width: 40rem;

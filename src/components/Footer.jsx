@@ -1,12 +1,8 @@
-import React, { useRef } from "react";
-import useCheckVisible from "../hooks/useCheckVisible";
+import React from "react";
 import useScrollIntoView from "../hooks/useScrollIntoView";
 import { ReactComponent as PortfolioSvg } from "../resources/svg/portfolio.svg";
 
 const Footer = () => {
-  const parentRef = useRef(null);
-  const { animateElement } = useCheckVisible(parentRef);
-
   const linksData = [
     {
       id: 0,
@@ -36,15 +32,11 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="footer" ref={parentRef}>
+    <footer className="footer">
       <div className="footer__logo">
         <PortfolioSvg />
       </div>
-      <div
-        className={`footer__column ${
-          animateElement && "leftToRight u-animation-delay"
-        }`}
-      >
+      <div className="footer__column">
         <div className="footer__wrapper">
           <ul className="footer__wrapper--list">
             {linksData.map((linkData) => {
@@ -62,11 +54,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div
-        className={`footer__column ${
-          animateElement && "rightToLeft u-animation-delay"
-        }`}
-      >
+
+      <div className="footer__column">
         <div className="footer__wrapper">
           <p className="paragraph u-paragraph-copyright">
             Build by ONOFREI CONSTANTIN to be used as a portfolio. Copyright
