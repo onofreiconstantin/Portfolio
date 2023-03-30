@@ -23,7 +23,7 @@ const Experience = () => {
     {
       id: "1",
       company: "RaisisSoftware",
-      position: "React Front End Developer",
+      position: "Front End Developer",
       startDate: "02.08.2022",
       present: true,
       endDate: `${currentDate}`,

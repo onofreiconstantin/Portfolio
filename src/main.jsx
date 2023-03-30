@@ -8,6 +8,6 @@ import "./styles/main.scss";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-    <ToastContainer position="bottom-right" />
+    <ToastContainer position="bottom-right" style={{ fontSize: "1.5rem" }} />
   </React.StrictMode>
 );

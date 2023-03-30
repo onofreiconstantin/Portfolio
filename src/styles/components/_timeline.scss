@@ -12,6 +12,10 @@
     border-radius: 9px;
     position: relative;
 
+    @include phone-only {
+      padding: 2rem 3rem;
+    }
+
     &:nth-of-type(odd) {
       background-image: linear-gradient(
         to right,
