@@ -22,14 +22,14 @@ const About = () => {
             animateElement && "bottomToTop u-animation-delay"
           }`}
         >
-          I'm a Junior Front End Developer in React with a Computer Science
-          degree. For the most part, I'm a self-taught developer with a strong
-          desire to work on projects that challenge me. I occupy my free time
-          learning new stuff about web development, playing games, watching
-          movies & TV Shows, and going out with friends. Presently I'm learning
-          about SCSS and the cool things you can do with CSS. Some of my core
-          values are dedication, being friendly and sympathetic, a good learning
-          curve, and the desire to learn new technologies.
+          I'm a Junior Front End Developer with a Computer Science degree. For
+          the most part, I'm a self-taught developer with a strong desire to
+          work on projects that challenge me. I occupy my free time learning new
+          stuff about web development, playing games, watching movies & TV
+          Shows, and going out with friends. Presently I'm learning about SCSS
+          and the cool things you can do with CSS. Some of my core values are
+          dedication, being friendly and sympathetic, a good learning curve, and
+          the desire to learn new technologies.
         </p>
       </div>
     </section>

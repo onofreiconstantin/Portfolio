@@ -49,6 +49,50 @@
   }
 }
 
+@keyframes RotateAndScale {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.5;
+    transform: scale(1.1) translateX(1rem) rotate(-90deg);
+    background-image: url("../resources/img/react.png");
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2) translateX(1.35rem) rotate(-180deg);
+    background-image: url("../resources/img/react.png");
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  70% {
+    opacity: 1;
+    transform: scale(1.1) translateX(1.75rem) rotate(-270deg);
+    background-image: url("../resources/img/react.png");
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0) rotate(-360deg);
+  }
+}
+
 .leftToRight {
   animation: LeftToRight 1s ease-out;
 }
@@ -59,4 +103,8 @@
 
 .bottomToTop {
   animation: BottomToTop 1s ease-out;
+}
+
+.rotateAndScale {
+  animation: RotateAndScale 1s linear;
 }

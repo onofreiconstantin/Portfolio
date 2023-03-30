@@ -62,6 +62,7 @@ const Contact = () => {
                     required
                     className="contact__form--input"
                     name="lastName"
+                    pattern="[A-Za-z]{3,}"
                   />
                   <label htmlFor="lastName" className="contact__form--label">
                     Last Name
@@ -75,6 +76,7 @@ const Contact = () => {
                     placeholder="First Name"
                     required
                     className="contact__form--input"
+                    pattern="[A-Za-z]{3,}"
                   />
                   <label htmlFor="firstName" className="contact__form--label">
                     Last Name
@@ -88,6 +90,7 @@ const Contact = () => {
                     placeholder="Email"
                     required
                     className="contact__form--input"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                   />
                   <label htmlFor="firstName" className="contact__form--label">
                     Email
@@ -101,6 +104,7 @@ const Contact = () => {
                     placeholder="Phone"
                     required
                     className="contact__form--input"
+                    pattern="\d{3}[\s-]?\d{3}[\s-]?\d{4}"
                   />
                   <label htmlFor="Phone" className="contact__form--label">
                     Phone
@@ -112,13 +116,12 @@ const Contact = () => {
                   <textarea
                     id="reason"
                     name="reason"
-                    placeholder="Tell me about your story and what is your reason for contacting me..."
+                    placeholder="Reason"
                     required
                     className="contact__form--input u-textarea"
                   />
                   <label htmlFor="reason" className="contact__form--label">
-                    Tell me about your story and what is your reason for
-                    contacting me...
+                    Reason
                   </label>
                 </div>
               </div>
