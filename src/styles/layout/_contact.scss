@@ -1,14 +1,14 @@
 .contact {
   &__header {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   &__container {
     border-radius: 9px;
     background-image: linear-gradient(
       to right,
-      rgba($primary-color, 0.8) 50%,
-      rgba($primary-color, 0.8) 50%,
+      rgba($primary-color, 0.6) 50%,
+      rgba($primary-color, 0.6) 50%,
 
       rgba($primary-color-light, 1)
     );
@@ -69,15 +69,15 @@
       &:focus {
         outline: none;
         box-shadow: 0 1rem 2rem rgba($color: $color-black, $alpha: 0.1);
-        border-bottom: 3px solid $tertiary-color-light;
+        border-bottom: 3px solid $primary-color-dark;
       }
 
       &:focus:invalid {
-        border-bottom: 3px solid $secondary-color-dark;
+        border-bottom: 3px solid $color-red;
       }
 
       &::-webkit-input-placeholder {
-        color: $tertiary-color;
+        color: $primary-color-dark;
       }
     }
 
@@ -93,7 +93,7 @@
       margin-left: 2rem;
       display: block;
       transition: all 0.3s ease;
-      color: $tertiary-color;
+      color: $primary-color-dark;
     }
   }
 

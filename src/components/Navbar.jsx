@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useLinksData from "../hooks/useLinksData";
 import useScrollIntoView from "../hooks/useScrollIntoView";
+import cvOnofreiConstantin from "../resources/files/cv-onofrei_constantin.pdf";
 import { ReactComponent as PortfolioSvg } from "../resources/svg/portfolio.svg";
 
 const Navbar = () => {
@@ -47,6 +48,8 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  console.log(cvOnofreiConstantin);
+
   return (
     <div className={`nav ${displayNavbar && `display-nav`}`}>
       <input type="checkbox" id="nav-toggle" className="nav__checkbox" />
@@ -73,7 +76,7 @@ const Navbar = () => {
             );
           })}
           <li className="nav__item">
-            <a href="#" className="btn-cv">
+            <a href={cvOnofreiConstantin} className="btn-cv" download>
               CV
             </a>
           </li>

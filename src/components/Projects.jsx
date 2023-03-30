@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import useCheckVisible from "../hooks/useCheckVisible";
 import othersImage from "../resources/img/othersImage.jpg";
 import portfolioImage from "../resources/img/portfolioImage.png";
-import transportImage from "../resources/img/transportImage.png";
+import transportImage from "../resources/img/transportImage.jpg";
 import { ReactComponent as GitHubIcon } from "../resources/svg/github.svg";
 import { ReactComponent as LinkIcon } from "../resources/svg/link.svg";
 import backgroundVideo from "../resources/video/backgroundVideo.mp4";
@@ -35,7 +35,7 @@ const Projects = () => {
       image: othersImage,
       name: "Others",
       description:
-        "I worked on other little projects,  based on JavsScript, React, or Next, but I never uploaded them to the internet. Also, I have decent work experience with CRMs.",
+        "I worked on other little projects,  based on JavsScript, React, or Next.",
     },
   ];
 

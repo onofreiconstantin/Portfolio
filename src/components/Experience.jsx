@@ -6,12 +6,6 @@ const Experience = () => {
   const parentRef = useRef(null);
   const { animateElement } = useCheckVisible(parentRef);
 
-  const currentDate = new Date().toLocaleDateString("ro-RO", {
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-  });
-
   const experiencesData = [
     {
       id: "0",
@@ -25,8 +19,6 @@ const Experience = () => {
       company: "RaisisSoftware",
       position: "Front End Developer",
       startDate: "02.08.2022",
-      present: true,
-      endDate: `${currentDate}`,
     },
   ];
 
@@ -102,18 +94,12 @@ const Experience = () => {
                       <p className="paragraph ">Start date:</p>
                       <p className="paragraph">{position.startDate}</p>
                     </div>
-                    <div className="timeline__job--content">
-                      <p className="paragraph ">End date:</p>
-                      <p className="paragraph">
-                        {`${position.endDate}
-                          ${
-                            position.hasOwnProperty("present") &&
-                            position.present
-                              ? " (present)"
-                              : ""
-                          }`}
-                      </p>
-                    </div>
+                    {position.hasOwnProperty("endDate") && (
+                      <div className="timeline__job--content">
+                        <p className="paragraph ">End date:</p>
+                        <p className="paragraph">{position.endDate}</p>
+                      </div>
+                    )}
                   </div>
                 </React.Fragment>
               );
