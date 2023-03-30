@@ -41,7 +41,7 @@
 .u-paragraph-copyright {
   color: $color-white !important;
   font-size: 1.5rem !important;
-
+  word-wrap: break-word;
 }
 
 .u-margin-left {
@@ -87,4 +87,24 @@
   &:visited::before {
     background-color: $primary-color-dark !important;
   }
+}
+
+.u-btn-social-alternative {
+  &:link,
+  &:visited {
+    svg {
+      fill: $color-white !important;
+    }
+  }
+
+  &:hover,
+  &:active {
+    svg {
+      fill: $primary-color-dark !important;
+    }
+  }
+}
+
+.u-cursor-pointer {
+  cursor: pointer;
 }

@@ -22,6 +22,8 @@
     &--content {
       width: inherit;
       height: inherit;
+      object-fit: cover;
+      object-position: left center;
       border-bottom: 0.25px solid rgba($color: $color-black, $alpha: 0.25);
     }
   }

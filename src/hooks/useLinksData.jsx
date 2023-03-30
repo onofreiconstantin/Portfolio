@@ -2,6 +2,7 @@ import { useLayoutEffect, useState } from "react";
 
 const useLinksData = () => {
   const [linksData, setLinksData] = useState([]);
+  const [headerElement, setHeaderElement] = useState(null);
 
   useLayoutEffect(() => {
     setLinksData([
@@ -31,9 +32,11 @@ const useLinksData = () => {
         name: "Contact me",
       },
     ]);
+
+    setHeaderElement(document.querySelector(".header"));
   }, []);
 
-  return { linksData };
+  return { linksData, headerElement };
 };
 
 export default useLinksData;
