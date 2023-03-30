@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useRef } from "react";
 import useCheckVisible from "../hooks/useCheckVisible";
 import useLinksData from "../hooks/useLinksData";
 import useScrollIntoView from "../hooks/useScrollIntoView";
@@ -29,8 +29,6 @@ const Footer = () => {
       svg: <InstagramSvg />,
     },
   ];
-
-  
 
   return (
     <footer className="footer" ref={parentRef}>
@@ -75,9 +73,8 @@ const Footer = () => {
         <div className="footer__wrapper">
           <p className="paragraph u-paragraph-copyright">
             Build by ONOFREI CONSTANTIN to be used as a portfolio. Copyright
-            &copy; by Onofrei Constantin. You can contact me at the number
-            0757258652, through email at constantin.onofrei22@gamil.com or via
-            the contact form.
+            &copy; by Onofrei Constantin. You can contact me via the contact
+            form.
           </p>
           <div className="footer__socials">
             {socialData.map((linkData) => {
