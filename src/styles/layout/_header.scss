@@ -31,15 +31,17 @@
         margin-right: 2rem;
       }
 
-      &:last-child {
-        &:hover {
-          transform: scale(1.2) translateX(1rem);
-          background-image: url("../resources/img/react.png");
-          background-position: center;
-          background-size: cover;
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
+      @include can-hover {
+        &:last-child {
+          &:hover {
+            transform: scale(1.2) translateX(1rem);
+            background-image: url("../resources/img/react.png");
+            background-position: center;
+            background-size: cover;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          }
         }
       }
     }

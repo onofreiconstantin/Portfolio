@@ -53,3 +53,9 @@
     @content;
   }
 }
+
+@mixin can-hover {
+  @media (hover: hover) {
+    @content;
+  }
+}

@@ -53,16 +53,20 @@
         stroke: $primary-color;
         transition: all 0.3s ease-in;
 
-        &:hover {
-          stroke: $tertiary-color;
-          transform: scale(1.075);
+        @include can-hover {
+          &:hover {
+            stroke: $tertiary-color;
+            transform: scale(1.075);
+          }
         }
       }
     }
   }
 
-  &:hover {
-    transform: translateY(-1.75rem) scale(1.035);
-    box-shadow: 0 5px 10px rgba($color: $color-black, $alpha: 0.2);
+  @include can-hover {
+    &:hover {
+      transform: translateY(-1.75rem) scale(1.035);
+      box-shadow: 0 5px 10px rgba($color: $color-black, $alpha: 0.2);
+    }
   }
 }

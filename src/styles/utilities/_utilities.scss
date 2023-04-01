@@ -1,8 +1,10 @@
 .u-heading-alternative {
   color: $color-white !important;
 
-  &:hover {
-    color: $tertiary-color-light !important;
+  @include can-hover {
+    &:hover {
+      color: $tertiary-color-light !important;
+    }
   }
 }
 
@@ -26,7 +28,7 @@
 }
 
 .u-animation-delay {
-  animation-delay: 0.5s !important;
+  animation-delay: 1s !important;
   animation-fill-mode: backwards !important ;
 }
 
@@ -77,9 +79,11 @@
     font-size: 1.5rem !important;
   }
 
-  &:hover,
-  &:active {
-    color: $primary-color-dark !important;
+  @include can-hover {
+    &:hover,
+    &:active {
+      color: $primary-color-dark !important;
+    }
   }
 
   &::before,
@@ -97,14 +101,20 @@
     }
   }
 
-  &:hover,
-  &:active {
-    svg {
-      fill: $primary-color-dark !important;
+  @include can-hover {
+    &:hover,
+    &:active {
+      svg {
+        fill: $primary-color-dark !important;
+      }
     }
   }
 }
 
 .u-cursor-pointer {
-  cursor: pointer;
+  cursor: pointer !important;
+}
+
+.u-no-pointer-events {
+  pointer-events: none !important;
 }
