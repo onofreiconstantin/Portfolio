@@ -21,12 +21,14 @@
     transform: rotateY(180deg);
   }
 
-  &:hover &__front {
-    transform: rotateY(-180deg);
-  }
+  @include can-hover {
+    &:hover &__front {
+      transform: rotateY(-180deg);
+    }
 
-  &:hover &__back {
-    transform: rotateY(0deg);
+    &:hover &__back {
+      transform: rotateY(0deg);
+    }
   }
 
   &__logo {

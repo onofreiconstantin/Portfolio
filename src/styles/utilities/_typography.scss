@@ -7,9 +7,11 @@
   display: inline-block;
   cursor: pointer;
 
-  &:hover {
-    transform: rotate(-0.75deg);
-    color: $tertiary-color;
+  @include can-hover {
+    &:hover {
+      transform: rotate(-0.75deg);
+      color: $tertiary-color;
+    }
   }
 }
 
@@ -22,9 +24,11 @@
   display: inline-block;
   cursor: pointer;
 
-  &:hover {
-    transform: rotate(-0.75deg);
-    color: $tertiary-color;
+  @include can-hover {
+    &:hover {
+      transform: rotate(-0.75deg);
+      color: $tertiary-color;
+    }
   }
 }
 

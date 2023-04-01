@@ -71,12 +71,14 @@
     }
   }
 
-  &__button:hover &__menu-icon::before {
-    top: -1.3rem;
-  }
+  @include can-hover {
+    &__button:hover &__menu-icon::before {
+      top: -1.3rem;
+    }
 
-  &__button:hover &__menu-icon::after {
-    top: 1.3rem;
+    &__button:hover &__menu-icon::after {
+      top: 1.3rem;
+    }
   }
 
   &__checkbox:checked + &__button &__menu-icon {

@@ -29,10 +29,14 @@ const Navbar = () => {
     setPrevScrollY(currentScrollY);
   };
 
+  const closeNavbar = () => {
+    const element = document.querySelector(".nav__checkbox");
+    element.checked = false;
+  };
+
   const handleResize = () => {
     if (window.innerWidth > 800) {
-      const element = document.querySelector(".nav__checkbox");
-      element.checked = false;
+      closeNavbar();
     }
 
     setWindowWidth(window.innerWidth);
@@ -47,8 +51,6 @@ const Navbar = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  console.log(cvOnofreiConstantin);
 
   return (
     <div className={`nav ${displayNavbar && `display-nav`}`}>
@@ -76,7 +78,12 @@ const Navbar = () => {
             );
           })}
           <li className="nav__item">
-            <a href={cvOnofreiConstantin} className="btn-cv" download>
+            <a
+              href={cvOnofreiConstantin}
+              className="btn-cv"
+              download
+              onClick={closeNavbar}
+            >
               CV
             </a>
           </li>

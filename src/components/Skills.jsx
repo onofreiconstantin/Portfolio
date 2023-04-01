@@ -95,8 +95,8 @@ const Skills = () => {
       logo: gitLogo,
       name: "GIT",
       skills: [
-        "Decent knowledge of the command used in a project with more than one person",
-        "Limited experience with version control repositories like BitBucket and GitHub (very little experience)",
+        "Good knowledge of how to use it in a project with more than one person",
+        "Limited experience with version control repositories like BitBucket and GitHub",
       ],
     },
     {
@@ -130,6 +130,24 @@ const Skills = () => {
     },
   ];
 
+  const rotateFront = (elementId, siblingId) => {
+    const element = document.getElementById(elementId);
+    element.style.transform = "rotateY(-180deg)";
+
+    const sibling = document.getElementById(siblingId);
+    sibling.style.transform = "rotateY(0deg)";
+  };
+
+  const rotateBack = (elementId, siblingId) => {
+    const element = document.getElementById(elementId);
+    element.style.transform = "rotateY(180deg)";
+
+    const sibling = document.getElementById(siblingId);
+    sibling.style.transform = "rotateY(0deg)";
+  };
+
+  const canHover = "ontouchstart" in window ? false : true;
+
   return (
     <section className="section-skills" ref={parentRef}>
       <div className="skills">
@@ -150,7 +168,16 @@ const Skills = () => {
           {logosData.map((logoData) => {
             return (
               <div className="card" key={logoData.id}>
-                <div className="card__front">
+                <div
+                  className={`card__front ${canHover && "u-no-pointer-events"}`}
+                  id={`card-front-${logoData.id}`}
+                  onClick={() =>
+                    rotateFront(
+                      `card-front-${logoData.id}`,
+                      `card-back-${logoData.id}`
+                    )
+                  }
+                >
                   <div className="card__logo">
                     <img
                       src={logoData.logo}
@@ -164,7 +191,16 @@ const Skills = () => {
                     </h3>
                   </div>
                 </div>
-                <div className="card__back">
+                <div
+                  className={`card__back ${canHover && "u-no-pointer-events"}`}
+                  id={`card-back-${logoData.id}`}
+                  onClick={() =>
+                    rotateBack(
+                      `card-back-${logoData.id}`,
+                      `card-front-${logoData.id}`
+                    )
+                  }
+                >
                   <h3 className="heading-tertiary u-center-text">
                     {logoData.name}
                   </h3>
