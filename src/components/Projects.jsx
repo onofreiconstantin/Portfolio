@@ -5,7 +5,8 @@ import portfolioImage from "../resources/img/portfolioImage.png";
 import transportImage from "../resources/img/transportImage.jpg";
 import { ReactComponent as GitHubIcon } from "../resources/svg/github.svg";
 import { ReactComponent as LinkIcon } from "../resources/svg/link.svg";
-import backgroundVideo from "../resources/video/backgroundVideo.mp4";
+import backgroundVideo2 from "../resources/video/backgroundVideo.mp4";
+import backgroundVideo1 from "../resources/video/backgroundVideo.webm";
 
 const Projects = () => {
   const parentRef = useRef(null);
@@ -42,9 +43,10 @@ const Projects = () => {
   return (
     <section className="section-projects" ref={parentRef}>
       <div className="projects">
-        <video className="projects__video" autoPlay loop muted>
-          <source src={backgroundVideo} type="video/mp4" />
-          Here is a nice background video!
+        <video className="projects__video" autoPlay loop muted preload="auto">
+          <source src={backgroundVideo2} type="video/webm" />
+          <source src={backgroundVideo1} type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
         <div className="projects__wrapper">
           <div className="projects__header">
