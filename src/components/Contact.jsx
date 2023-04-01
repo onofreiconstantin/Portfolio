@@ -58,10 +58,10 @@ const Contact = () => {
                   <input
                     type="text"
                     id="lastName"
+                    name="lastName"
                     placeholder="Last Name"
                     required
                     className="contact__form--input"
-                    name="lastName"
                     pattern="[A-Za-z]{3,}"
                   />
                   <label htmlFor="lastName" className="contact__form--label">
@@ -92,21 +92,21 @@ const Contact = () => {
                     className="contact__form--input"
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                   />
-                  <label htmlFor="firstName" className="contact__form--label">
+                  <label htmlFor="email" className="contact__form--label">
                     Email
                   </label>
                 </div>
                 <div className="contact__form--input-group">
                   <input
                     type="tel"
-                    id="tel"
+                    id="phone"
                     name="phone"
                     placeholder="Phone"
                     required
                     className="contact__form--input"
                     pattern="\d{3}[\s-]?\d{3}[\s-]?\d{4}"
                   />
-                  <label htmlFor="Phone" className="contact__form--label">
+                  <label htmlFor="phone" className="contact__form--label">
                     Phone
                   </label>
                 </div>
