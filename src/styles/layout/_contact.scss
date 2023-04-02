@@ -1,4 +1,8 @@
 .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &__header {
     margin-bottom: 5rem;
   }
