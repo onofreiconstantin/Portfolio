@@ -10,10 +10,6 @@
   }
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     background-image: linear-gradient(
       to left,
       rgba($primary-color-light, 1),
@@ -35,7 +31,7 @@
 
   &__header {
     margin-bottom: 5rem;
-    text-align: right;
+    text-align: center;
   }
 
   &__container {
