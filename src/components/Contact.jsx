@@ -47,6 +47,8 @@ const Contact = () => {
       );
   };
 
+  console.log(window.innerWidth);
+
   return (
     <section className="section-contact" ref={parentRef}>
       <div className="contact">
