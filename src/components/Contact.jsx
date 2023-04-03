@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import { toast } from "react-toastify";
 import useCheckVisible from "../hooks/useCheckVisible";
 import coddingImage from "../resources/img/contact-codding.jpg";
@@ -7,29 +8,41 @@ import coddingImage from "../resources/img/contact-codding.jpg";
 const Contact = () => {
   const formRef = useRef(null);
   const parentRef = useRef(null);
+  const captchaRef = useRef(null);
   const { animateElement } = useCheckVisible(parentRef);
   const [isSending, setIsSending] = useState(false);
+
+  console.log(captchaRef);
 
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSending(true);
+
+    if (!captchaRef.current.getValue()) {
+      toast.error("Please confirm that you are not a robot!");
+      setIsSending(false);
+      return;
+    }
 
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
         formRef.current,
-        import.meta.env.VITE_PUBLIC_KEY
+        import.meta.env.VITE_PUBLIC_KEY,
+        { g_recaptcha_response: captchaRef.current.getValue() }
       )
       .then(
         () => {
           formRef.current.reset();
           toast.success("Email sent");
           setIsSending(false);
+          captchaRef.current.reset();
         },
         () => {
           toast.error("Email couldn't be sent");
           setIsSending(false);
+          captchaRef.current.reset();
         }
       );
   };
@@ -58,10 +71,10 @@ const Contact = () => {
                   <input
                     type="text"
                     id="lastName"
-                    name="lastName"
                     placeholder="Last Name"
                     required
                     className="contact__form--input"
+                    name="lastName"
                     pattern="[A-Za-z]{3,}"
                   />
                   <label htmlFor="lastName" className="contact__form--label">
@@ -92,24 +105,29 @@ const Contact = () => {
                     className="contact__form--input"
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                   />
-                  <label htmlFor="email" className="contact__form--label">
+                  <label htmlFor="firstName" className="contact__form--label">
                     Email
                   </label>
                 </div>
                 <div className="contact__form--input-group">
                   <input
                     type="tel"
-                    id="phone"
+                    id="tel"
                     name="phone"
                     placeholder="Phone"
                     required
                     className="contact__form--input"
                     pattern="\d{3}[\s-]?\d{3}[\s-]?\d{4}"
                   />
-                  <label htmlFor="phone" className="contact__form--label">
+                  <label htmlFor="Phone" className="contact__form--label">
                     Phone
                   </label>
                 </div>
+                <ReCAPTCHA
+                  className="u-margin-bottom"
+                  ref={captchaRef}
+                  sitekey={import.meta.env.VITE_SITE_KEY}
+                />
               </div>
               <div className="contact__form--column">
                 <div className="contact__form--input-group u-max-height">
