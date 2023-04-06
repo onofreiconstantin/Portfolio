@@ -47,8 +47,6 @@ const Contact = () => {
       );
   };
 
-  console.log(window.innerWidth);
-
   return (
     <section className="section-contact" ref={parentRef}>
       <div className="contact">
@@ -125,11 +123,6 @@ const Contact = () => {
                     Phone
                   </label>
                 </div>
-                <ReCAPTCHA
-                  className="u-margin-bottom"
-                  ref={captchaRef}
-                  sitekey={import.meta.env.VITE_SITE_KEY}
-                />
               </div>
               <div className="contact__form--column">
                 <div className="contact__form--input-group u-max-height">
@@ -145,14 +138,22 @@ const Contact = () => {
                   </label>
                 </div>
               </div>
-              <button
-                className="btn-cv "
-                type="submit"
-                value="Send"
-                disabled={isSending}
-              >
-                Submit
-              </button>
+              <div>
+                <ReCAPTCHA
+                  className="u-margin-bottom"
+                  ref={captchaRef}
+                  sitekey={import.meta.env.VITE_SITE_KEY}
+                  size={window.innerWidth < 600 ? "compact" : "normal"}
+                />
+                <button
+                  className="btn-cv u-max-width"
+                  type="submit"
+                  value="Send"
+                  disabled={isSending}
+                >
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
           <div className="contact__column">
