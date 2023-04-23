@@ -2,7 +2,7 @@ import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
 import { toast } from "react-toastify";
 import useCheckVisible from "../hooks/useCheckVisible";
-import coddingImage from "../resources/img/contact-codding.jpg";
+import coddingImage from "../resources/img/contact-codding.webp";
 
 const Contact = () => {
   const formRef = useRef(null);
