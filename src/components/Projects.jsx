@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import useCheckVisible from "../hooks/useCheckVisible";
-import othersImage from "../resources/img/othersImage.jpg";
-import portfolioImage from "../resources/img/portfolioImage.png";
-import transportImage from "../resources/img/transportImage.jpg";
+import othersImage from "../resources/img/othersImage.webp";
+import portfolioImage from "../resources/img/portfolioImage.webp";
+import transportImage from "../resources/img/transportImage.webp";
 import { ReactComponent as GitHubIcon } from "../resources/svg/github.svg";
 import { ReactComponent as LinkIcon } from "../resources/svg/link.svg";
 import backgroundVideo2 from "../resources/video/backgroundVideo.mp4";
@@ -36,7 +36,7 @@ const Projects = () => {
       image: othersImage,
       name: "Others",
       description:
-        "I worked on other little projects,  based on JavsScript, React, or Next.",
+        "I worked on other little projects,  based on JavaScript, React, or Next.",
     },
   ];
 

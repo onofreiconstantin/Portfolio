@@ -1,5 +1,5 @@
 import React from "react";
-import portfolioImage from "../resources/img/portfolio.png";
+import portfolioImage from "../resources/img/portfolio.webp";
 import { ReactComponent as FacebookSvg } from "../resources/svg/facebook.svg";
 import { ReactComponent as InstagramSvg } from "../resources/svg/instagram.svg";
 import { ReactComponent as LinkedInSvg } from "../resources/svg/linkedIn.svg";
