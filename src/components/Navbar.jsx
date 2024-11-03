@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useLinksData from "../hooks/useLinksData";
 import useScrollIntoView from "../hooks/useScrollIntoView";
-import cvOnofreiConstantin from "../resources/files/cv-onofrei_constantin.pdf";
+import cvOnofreiConstantin from "../resources/files/Onofrei_Constantin_CV.pdf";
 import { ReactComponent as PortfolioSvg } from "../resources/svg/portfolio.svg";
 
 const Navbar = () => {
@@ -81,7 +81,7 @@ const Navbar = () => {
             <a
               href={cvOnofreiConstantin}
               className="btn-cv"
-              download
+              download={"Onofrei_Constantin_CV.pdf"}
               onClick={closeNavbar}
             >
               CV
