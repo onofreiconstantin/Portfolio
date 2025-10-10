@@ -169,9 +169,8 @@ const Skills = () => {
       logo: validationLogo,
       name: "Validation & Forms",
       skills: [
-        "Strong focus on React Hook Form for high-performance input control, minimal re-renders, and efficient form validation.",
-        "Strong proficiency in Zod and YUP for schema declaration and validation, ensuring data integrity across API boundaries and user inputs.",
-        "Familiarity with Formik for robust form state management, including the creation of custom inputs.",
+        "Strong proficiency in Zod and YUP for schema declaration and validation, ensuring data integrity.",
+        "Primary focus on React Hook Form for high-performance control and validation, supplemented by familiarity with Formik for state management.",
       ],
     },
     {
