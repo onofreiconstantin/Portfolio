@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
 import useCheckVisible from "../hooks/useCheckVisible";
-import othersImage from "../resources/img/othersImage.webp";
 import portfolioImage from "../resources/img/portfolioImage.webp";
-import transportImage from "../resources/img/transportImage.webp";
+import saptariiLogo from "../resources/img/saptariiLogo.webp";
 import { ReactComponent as GitHubIcon } from "../resources/svg/github.svg";
 import { ReactComponent as LinkIcon } from "../resources/svg/link.svg";
 import backgroundVideo2 from "../resources/video/backgroundVideo.mp4";
@@ -20,23 +19,15 @@ const Projects = () => {
       link: "https://portfolio-oc.netlify.app/",
       github: "https://github.com/Onofrei-Constantin/Portfolio",
       description:
-        "It's my most recent work and my best in terms of styling. Here is where I tried to show what I learned in the past month in CSS, SCSS, and more.",
+        "One of my strongest projects from the start of my career in terms of styling. This work allowed me to demonstrate consolidated knowledge in CSS, SCSS, and modern frontend design.",
     },
     {
       id: 1,
-      image: transportImage,
-      name: "Web platform for local public transport",
-      link: "https://licenta-onofrei-constantin.netlify.app/",
-      github:
-        "https://github.com/Onofrei-Constantin/Web-platform-for-local-public-transport",
-      description: `This was my first "big" project, and it's the place where I fell in love with React. It was the topic for my license in computer science and I learned a lot of things like CSS, HTML, JavaScrip, and how React works.`,
-    },
-    {
-      id: 2,
-      image: othersImage,
-      name: "Others",
+      image: saptariiLogo,
+      name: "Saptarii.ro – RDR2 Server Subscription Platform",
+      link: "https://saptarii.ro/",
       description:
-        "I worked on other little projects,  based on JavaScript, React, or Next.",
+        "Subscription platform for a Red Dead Redemption 2 server. I developed most of the backend logic, created a part of the admin interface, and implemented the dynamic interactive map.",
     },
   ];
 

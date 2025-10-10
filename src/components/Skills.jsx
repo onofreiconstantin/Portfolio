@@ -8,10 +8,19 @@ import languageLogo from "../resources/img/languageLogo.webp";
 import muiLogo from "../resources/img/muiLogo.webp";
 import nextLogo from "../resources/img/nextLogo.webp";
 import nodeLogo from "../resources/img/nodeLogo.webp";
-import otherSkillsLogo from "../resources/img/otherSkillsLogo.webp";
 import reactLogo from "../resources/img/reactLogo.webp";
 import scssLogo from "../resources/img/scssLogo.webp";
 import tailwindLogo from "../resources/img/tailwindLogo.webp";
+import typescriptLogo from "../resources/img/typescriptLogo.webp";
+import shadcnLogo from "../resources/img/shadcnLogo.webp";
+import nestjsLogo from "../resources/img/nestjsLogo.webp";
+import dockerLogo from "../resources/img/dockerLogo.webp";
+import prismaLogo from "../resources/img/prismaLogo.webp";
+import typeormLogo from "../resources/img/typeormLogo.webp";
+import postgresqlLogo from "../resources/img/postgresqlLogo.webp";
+import mongodbLogo from "../resources/img/mongodbLogo.webp";
+import stripeLogo from "../resources/img/stripeLogo.webp";
+import validationLogo from "../resources/img/validationLogo.webp";
 
 const Skills = () => {
   const parentRef = useRef(null);
@@ -23,19 +32,17 @@ const Skills = () => {
       logo: reactLogo,
       name: "React",
       skills: [
-        "Decent amount of experience with versions 17 and 18",
-        "Strong knowledge of state  management, props usage, and advanced hooks like useLayoutEffect, useCallback, useMemo, useContext, etcetera",
-        "Understanding of custom hooks, and HOC components such as memo",
+        "Proficient in React (v17/18/19), with strong knowledge of state management, props usage, and advanced hooks (e.g., useLayoutEffect, useCallback, useMemo, useContext).",
+        "Solid understanding of custom hooks and higher-order components (e.g., memo).",
       ],
     },
     {
       id: 1,
       logo: nextLogo,
-      name: "Next Js",
+      name: "Next.js",
       skills: [
-        "Limited experience with version 12",
-        "A decent understanding of SSR and SSG and why they are so important for sites that use SEO",
-        "Good knowledge of Link and Image components",
+        "Experience with Next.js (v12/13/14/15), including a solid understanding of SSR (Server-Side Rendering) and SSG (Static Site Generation) for SEO and performance.",
+        "Proficient with core components like Link and Image.",
       ],
     },
     {
@@ -43,89 +50,164 @@ const Skills = () => {
       logo: javascriptLogo,
       name: "JavaScript",
       skills: [
-        "Strong knowledge of advanced JavaScript and ES6 functions",
-        "A decent understanding of the JavaScript object model including DOM manipulation",
+        "Strong foundation in advanced JavaScript and ES6+ features.",
+        "Good understanding of the JavaScript object model, including DOM manipulation.",
       ],
     },
     {
       id: 3,
-      logo: htmlLogo,
-      name: "HTML",
+      logo: typescriptLogo,
+      name: "TypeScript",
       skills: [
-        "A good understanding of HTML 5 elements and why are they so important for sites that use SEO",
+        "Proficient in using TypeScript as a superset of JavaScript to ensure type safety, improve code quality, and maintain scalability in large projects.",
       ],
     },
     {
       id: 4,
-      logo: cssLogo,
-      name: "CSS",
+      logo: htmlLogo,
+      name: "HTML",
       skills: [
-        "Strong knowledge of CSS properties, selectors, pseudo-classes, and pseudo-elements",
-        "Good understanding of more advanced CSS properties like animations, keyframes, transform, transition, clip-path, etcetera",
-        "The ability to create responsive designs for any device",
+        "Good understanding of semantic HTML5 elements and their critical role in web accessibility and SEO.",
       ],
     },
     {
       id: 5,
-      logo: scssLogo,
-      name: "SCSS",
+      logo: cssLogo,
+      name: "CSS",
       skills: [
-        "Excellent knowledge of core concepts such as variables, mixins, nesting, functions, and modular code",
+        "Strong knowledge of core CSS properties, selectors, pseudo-classes, and pseudo-elements.",
+        "Proficient in creating advanced effects using animations, keyframes, transform, and transition.",
+        "Ability to create fully responsive designs for any device.",
       ],
     },
     {
       id: 6,
-      logo: tailwindLogo,
-      name: "Tailwind",
+      logo: scssLogo,
+      name: "SCSS",
       skills: [
-        "Limited experience with versions 2 and 3, with a good knowledge about the basic functions and classes",
+        "Excellent knowledge of SCSS core concepts, including variables, mixins, nesting, functions, and creating modular, maintainable stylesheets.",
       ],
     },
     {
       id: 7,
-      logo: muiLogo,
-      name: "MUI",
+      logo: tailwindLogo,
+      name: "Tailwind CSS",
       skills: [
-        "Decent amount of experience with versions 4 and 5",
-        "The ability to style components using the sx property, classes, and the theme provider",
+        "Experience with Tailwind CSS (v2/3/4), demonstrating good knowledge of its utility-first approach and essential functions/classes for rapid UI development.",
       ],
     },
     {
       id: 8,
-      logo: gitLogo,
-      name: "GIT",
+      logo: shadcnLogo,
+      name: "Shadcn/UI",
       skills: [
-        "Good knowledge of how to use it in a project with more than one person",
-        "Limited experience with version control repositories like BitBucket and GitHub",
+        "Proficient in using Shadcn/UI (bazat pe Radix și Tailwind) for building aesthetically pleasing and accessible UIs by composing customizable components.",
       ],
     },
     {
       id: 9,
-      logo: nodeLogo,
-      name: "NODE",
+      logo: muiLogo,
+      name: "Material UI",
       skills: [
-        "Very limited understanding of the framework Express Js, my only experience is from when I worked on my computer science license. I plan on becoming a Full Stack developer in the future",
+        "Decent experience with Material UI (MUI) (v4/5).",
+        "Able to effectively style and customize components using the sx property, class overrides, and the ThemeProvider.",
       ],
     },
     {
       id: 10,
-      logo: languageLogo,
-      name: "English language skills",
+      logo: nodeLogo,
+      name: "Node.js",
       skills: [
-        "Understanding the audible text: B1",
-        "Understanding of the text read: B2",
-        "Production of written messages: B2",
-        "Production of oral messages: B2",
-        "Oral interaction: B2",
+        "Basic understanding of the Node.js environment.",
+        "Limited experience with the Express.js framework, primarily from an academic project.",
+        "Actively working towards becoming a Full-Stack Developer.",
       ],
     },
     {
       id: 11,
-      logo: otherSkillsLogo,
-      name: "Other skills",
+      logo: nestjsLogo,
+      name: "NestJS",
       skills: [
-        "Decent knowledge about how Formik works, including the creation of custom inputs that can be used in Form",
-        "Good understanding of how YUP works, including the integration with Formik",
+        "Early experience with NestJS, focusing on building scalable and maintainable server-side applications using its modular, controller-service structure.",
+      ],
+    },
+    {
+      id: 12,
+      logo: prismaLogo,
+      name: "Prisma",
+      skills: [
+        "Experience with Prisma (ORM), including schema definition, database migration management, and utilizing the Prisma Client for efficient data querying.",
+      ],
+    },
+    {
+      id: 13,
+      logo: typeormLogo,
+      name: "TypeORM",
+      skills: [
+        "Familiarity with TypeORM for managing relational data in TypeScript applications, including defining entities and using repositories.",
+      ],
+    },
+    {
+      id: 14,
+      logo: postgresqlLogo,
+      name: "PostgreSQL",
+      skills: [
+        "Basic proficiency in PostgreSQL, focusing on creating robust schemas, writing standard SQL queries, and understanding relational database principles (ACID).",
+      ],
+    },
+    {
+      id: 15,
+      logo: mongodbLogo,
+      name: "MongoDB & Mongoose",
+      skills: [
+        "Basic knowledge of MongoDB (NoSQL) and using Mongoose (ODM) to enforce data structure (schemas) and validation.",
+        "Familiarity with basic queries (MQL) and the concept of flexible schema design.",
+      ],
+    },
+    {
+      id: 16,
+      logo: validationLogo,
+      name: "Validation & Forms",
+      skills: [
+        "Strong proficiency in Zod and YUP for schema declaration and validation, ensuring data integrity across API boundaries and user inputs.",
+        "Decent knowledge of Formik for robust form state management and handling, including the creation of custom inputs.",
+      ],
+    },
+    {
+      id: 17,
+      logo: stripeLogo,
+      name: "Stripe",
+      skills: [
+        "Familiarity with Stripe API integration for handling payments, subscriptions, and managing financial transactions within a web application.",
+      ],
+    },
+    {
+      id: 18,
+      logo: gitLogo,
+      name: "GIT & Version Control",
+      skills: [
+        "Good practical knowledge of GIT for collaborative projects and standard branching workflows (e.g., Git Flow).",
+        "Familiarity with version control repositories like GitHub and BitBucket.",
+      ],
+    },
+    {
+      id: 19,
+      logo: dockerLogo,
+      name: "Docker",
+      skills: [
+        "Limited experience in creating basic Docker containers for development environments and understanding containerization fundamentals.",
+      ],
+    },
+    {
+      id: 20,
+      logo: languageLogo,
+      name: "English Language Skills",
+      skills: [
+        "Listening: B1",
+        "Reading: B2",
+        "Writing: B2",
+        "Spoken Production: B2",
+        "Spoken Interaction: B2",
       ],
     },
   ];

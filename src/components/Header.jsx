@@ -32,7 +32,7 @@ const Header = () => {
         </h2>
 
         <div className="header__skill">
-          <h2 className="heading-secondary leftToRight">Front End</h2>
+          <h2 className="heading-secondary leftToRight">Software</h2>
           <h2 className="heading-secondary rotateAndScale">Developer</h2>
         </div>
 

@@ -12,8 +12,6 @@ const Contact = () => {
   const { animateElement } = useCheckVisible(parentRef);
   const [isSending, setIsSending] = useState(false);
 
-  console.log(captchaRef);
-
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSending(true);
