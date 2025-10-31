@@ -21,6 +21,7 @@ import postgresqlLogo from "../resources/img/postgresqlLogo.webp";
 import mongodbLogo from "../resources/img/mongodbLogo.webp";
 import stripeLogo from "../resources/img/stripeLogo.webp";
 import validationLogo from "../resources/img/validationLogo.webp";
+import zustandLogo from "../resources/img/zustandLogo.webp";
 
 const Skills = () => {
   const parentRef = useRef(null);
@@ -171,6 +172,14 @@ const Skills = () => {
       skills: [
         "Strong proficiency in Zod and YUP for schema declaration and validation, ensuring data integrity.",
         "Primary focus on React Hook Form for high-performance control and validation, supplemented by familiarity with Formik for state management.",
+      ],
+    },
+    {
+      id: 21,
+      logo: zustandLogo,
+      name: "Zustand",
+      skills: [
+        "Basic knowledge of Zustand providing a concise and practical way to manage shared state and simplify state logic",
       ],
     },
     {
