@@ -24,11 +24,11 @@ const About = () => {
           }`}
         >
           <p className="paragraph">
-            I'm a Software Developer with over 3 years of experience, primarily
-            focused on front-end development at a mid-level, while also gaining
-            hands-on experience on the backend. Recently, I've been expanding my
-            backend skills to strengthen my full-stack understanding and become
-            more versatile in building complete applications.
+            I’m a Full-stack Developer with over 3 years of experience,
+            primarily focused on front-end development at a mid-level while also
+            gaining hands-on experience on the backend. Recently, I’ve been
+            expanding my backend skills to strengthen my full-stack expertise
+            and become more versatile in building complete applications.
           </p>
           <p className="paragraph">
             I’m passionate about creating clean, user-friendly interfaces and

@@ -28,7 +28,7 @@ const Header = () => {
       <div className="header__info">
         <h1 className="heading-primary leftToRight">Hello</h1>
         <h2 className="heading-secondary leftToRight">
-          I'm Onofrei Constantin
+          I'm Constantin Onofrei
         </h2>
 
         <div className="header__skill">

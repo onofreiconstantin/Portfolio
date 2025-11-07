@@ -9,10 +9,9 @@ const Experience = () => {
   const experiencesData = [
     {
       id: "0",
-      company: "Mics Software Srl",
-      position: "Wordpress developer (practice period)",
-      startDate: "01.06.2019",
-      endDate: "31.06.2019",
+      company: "TRAVLRD",
+      position: "Full-stack Developer",
+      startDate: "10.11.2025",
     },
     {
       id: "1",
@@ -20,6 +19,13 @@ const Experience = () => {
       position: "Software Developer",
       startDate: "02.08.2022",
       endDate: "06.10.2025",
+    },
+    {
+      id: "2",
+      company: "Mics Software Srl",
+      position: "Wordpress developer (practice period)",
+      startDate: "01.06.2019",
+      endDate: "31.06.2019",
     },
   ];
 
