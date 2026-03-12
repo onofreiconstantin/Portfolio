@@ -13,11 +13,11 @@ import scssLogo from "../resources/img/scssLogo.webp";
 import tailwindLogo from "../resources/img/tailwindLogo.webp";
 import typescriptLogo from "../resources/img/typescriptLogo.webp";
 import shadcnLogo from "../resources/img/shadcnLogo.webp";
-import nestjsLogo from "../resources/img/nestjsLogo.webp";
 import dockerLogo from "../resources/img/dockerLogo.webp";
 import prismaLogo from "../resources/img/prismaLogo.webp";
-import typeormLogo from "../resources/img/typeormLogo.webp";
+import drizzleLogo from "../resources/img/drizzleLogo.webp";
 import postgresqlLogo from "../resources/img/postgresqlLogo.webp";
+import supabaseLogo from "../resources/img/supabaseLogo.webp";
 import mongodbLogo from "../resources/img/mongodbLogo.webp";
 import stripeLogo from "../resources/img/stripeLogo.webp";
 import validationLogo from "../resources/img/validationLogo.webp";
@@ -125,14 +125,6 @@ const Skills = () => {
       ],
     },
     {
-      id: 11,
-      logo: nestjsLogo,
-      name: "NestJS",
-      skills: [
-        "Early experience with NestJS, focusing on building scalable and maintainable server-side applications using its modular, controller-service structure.",
-      ],
-    },
-    {
       id: 12,
       logo: prismaLogo,
       name: "Prisma",
@@ -142,10 +134,10 @@ const Skills = () => {
     },
     {
       id: 13,
-      logo: typeormLogo,
-      name: "TypeORM",
+      logo: drizzleLogo,
+      name: "Drizzle ORM",
       skills: [
-        "Familiarity with TypeORM for managing relational data in TypeScript applications, including defining entities and using repositories.",
+        "Experience with Drizzle ORM, including schema definition, database migration management, and using its type-safe query APIs for efficient data access.",
       ],
     },
     {
@@ -158,6 +150,15 @@ const Skills = () => {
     },
     {
       id: 15,
+      logo: supabaseLogo,
+      name: "Supabase",
+      skills: [
+        "Experience with Supabase for building production-ready backend features, including authentication, PostgreSQL database workflows, and object storage.",
+        "Familiarity with scheduled jobs (Cron), real-time capabilities, and security patterns such as Row Level Security, helping deliver scalable and maintainable full-stack applications.",
+      ],
+    },
+    {
+      id: 16,
       logo: mongodbLogo,
       name: "MongoDB & Mongoose",
       skills: [
@@ -166,7 +167,7 @@ const Skills = () => {
       ],
     },
     {
-      id: 16,
+      id: 17,
       logo: validationLogo,
       name: "Validation & Forms",
       skills: [
@@ -183,7 +184,7 @@ const Skills = () => {
       ],
     },
     {
-      id: 17,
+      id: 18,
       logo: stripeLogo,
       name: "Stripe",
       skills: [
@@ -191,7 +192,7 @@ const Skills = () => {
       ],
     },
     {
-      id: 18,
+      id: 19,
       logo: gitLogo,
       name: "GIT & Version Control",
       skills: [
@@ -200,7 +201,7 @@ const Skills = () => {
       ],
     },
     {
-      id: 19,
+      id: 20,
       logo: dockerLogo,
       name: "Docker",
       skills: [
@@ -208,7 +209,7 @@ const Skills = () => {
       ],
     },
     {
-      id: 20,
+      id: 22,
       logo: languageLogo,
       name: "English Language Skills",
       skills: [

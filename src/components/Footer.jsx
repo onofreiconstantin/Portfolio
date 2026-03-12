@@ -72,8 +72,8 @@ const Footer = () => {
       >
         <div className="footer__wrapper">
           <p className="paragraph u-paragraph-copyright">
-            Build by ONOFREI CONSTANTIN to be used as a portfolio. Copyright
-            &copy; by Onofrei Constantin. You can contact me via the contact
+            Build by CONSTANTIN ONOFREI to be used as a portfolio. Copyright
+            &copy; by Constantin Onofrei. You can contact me via the contact
             form or on my socials.
           </p>
           <div className="footer__socials">

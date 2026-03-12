@@ -24,11 +24,13 @@ const About = () => {
           }`}
         >
           <p className="paragraph">
-            I’m a Software Developer with over 3 years of experience, primarily
-            focused on front-end development at a mid-level while also gaining
-            hands-on experience on the backend. Recently, I’ve been expanding my
-            backend skills to strengthen my full-stack expertise and become more
-            versatile in building complete applications.
+            I’m a Software Developer with 4+ years’ experience building ERP,
+            CRM, Field Service, and e-commerce applications. I led front-end
+            development for a multi-client ERP, contributed to CRM and FSM
+            projects, and most recently worked full-stack on an e-commerce
+            platform and an AI-powered estimation tool. I’m currently
+            strengthening my backend expertise with technologies like Supabase
+            and Drizzle.
           </p>
           <p className="paragraph">
             I’m passionate about creating clean, user-friendly interfaces and
@@ -40,8 +42,10 @@ const About = () => {
           </p>
           <p className="paragraph">
             Some of my core values are dedication, curiosity, empathy, and
-            continuous learning, which drive me to keep improving and to
-            contribute meaningfully to every team I’m part of.
+            continuous learning, which drive me to keep improving, take
+            ownership of my work, and contribute meaningfully to every team I’m
+            part of. I also value clear communication, reliability, and
+            building products that are both useful and thoughtfully crafted.
           </p>
         </div>
       </div>
