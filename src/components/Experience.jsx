@@ -1,10 +1,20 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Xarrow from "react-xarrows";
 import useCheckVisible from "../hooks/useCheckVisible";
 
 const Experience = () => {
   const parentRef = useRef(null);
   const { animateElement } = useCheckVisible(parentRef);
+  const [showArrows, setShowArrows] = useState(() => window.innerWidth > 800);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowArrows(window.innerWidth > 800);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const experiencesData = [
     {
@@ -31,9 +41,9 @@ const Experience = () => {
   ];
 
   function renderArrow(endId, index, children) {
-    if (index === 0) return;
+    if (index === 0 || !showArrows) return;
 
-    const startId = children[index - 1].id;
+    const previousId = children[index - 1].id;
     let startDirection;
     let endDirection;
 
@@ -47,7 +57,7 @@ const Experience = () => {
 
     return (
       <Xarrow
-        start={startId}
+        start={previousId}
         end={endId}
         startAnchor={startDirection}
         endAnchor={endDirection}
@@ -55,8 +65,10 @@ const Experience = () => {
         animateDrawing={true}
         path="grid"
         gridBreak="150%"
-        headShape="circle"
-        headSize={4}
+        showHead={false}
+        showTail={true}
+        tailShape="circle"
+        tailSize={4}
         zIndex={1}
       />
     );
@@ -109,6 +121,9 @@ const Experience = () => {
                       </div>
                     )}
                   </div>
+                  {!showArrows && index < self.length - 1 && (
+                    <div className="timeline__mobile-arrow" aria-hidden="true" />
+                  )}
                 </React.Fragment>
               );
             })}

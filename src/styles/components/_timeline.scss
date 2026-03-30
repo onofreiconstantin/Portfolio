@@ -3,6 +3,42 @@
   flex-direction: column;
   gap: 3.5rem;
 
+  &__mobile-arrow {
+    display: none;
+
+    @include small-devices {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height: 4rem;
+      color: $primary-color-dark;
+    }
+
+    &::before {
+      @include small-devices {
+        content: "";
+        width: 3px;
+        height: 3rem;
+        border-radius: 999px;
+        background-color: currentColor;
+      }
+    }
+
+    &::after {
+      @include small-devices {
+        content: "";
+        position: absolute;
+        top: 0.1rem;
+        width: 1rem;
+        height: 1rem;
+        border-left: 3px solid currentColor;
+        border-top: 3px solid currentColor;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
   &__job {
     display: flex;
     gap: 3rem;
