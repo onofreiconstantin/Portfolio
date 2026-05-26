@@ -213,11 +213,8 @@ const Skills = () => {
       logo: languageLogo,
       name: "English Language Skills",
       skills: [
-        "Listening: B1",
-        "Reading: B2",
-        "Writing: B2",
-        "Spoken Production: B2",
-        "Spoken Interaction: B2",
+        "Overall proficiency: C1 (Advanced)",
+        "Comfortable reading technical documentation, writing professional messages, and discussing software engineering topics in English.",
       ],
     },
   ];
