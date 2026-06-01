@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import useCheckVisible from "../hooks/useCheckVisible";
 import portfolioImage from "../resources/img/portfolioImage.webp";
+import ajandekbarLogo from "../resources/img/ajandekbarLogo.png";
 import saptariiLogo from "../resources/img/saptariiLogo.webp";
 import { ReactComponent as GitHubIcon } from "../resources/svg/github.svg";
 import { ReactComponent as LinkIcon } from "../resources/svg/link.svg";
@@ -23,11 +24,19 @@ const Projects = () => {
     },
     {
       id: 1,
+      image: ajandekbarLogo,
+      name: "AjándékBár – Gift Card E-commerce Platform",
+      link: "https://ajandekbar.hu/",
+      description:
+        "Public gift card e-commerce platform with customer, admin, and partner portals. I worked full-stack across product flows, Stripe payments, APIs, and database logic.",
+    },
+    {
+      id: 2,
       image: saptariiLogo,
       name: "Saptarii.ro – RDR2 Server Subscription Platform",
       link: "https://saptarii.ro/",
       description:
-        "Subscription platform for a Red Dead Redemption 2 server. I developed most of the backend logic, created a part of the admin interface, and implemented the dynamic interactive map.",
+        "Community subscription platform for a Red Dead Redemption 2 server. I built key parts of the public site, subscriptions, Stripe payment logic, AWS S3 storage, the admin dashboard, and the interactive map.",
     },
   ];
 

@@ -24,28 +24,25 @@ const About = () => {
           }`}
         >
           <p className="paragraph">
-            I’m a Software Developer with 4+ years’ experience building ERP,
-            CRM, Field Service, and e-commerce applications. I led front-end
-            development for a multi-client ERP, contributed to CRM and FSM
-            projects, and most recently worked full-stack on an e-commerce
-            platform and an AI-powered estimation tool. I’m currently
-            strengthening my backend expertise with technologies like Supabase
-            and Drizzle.
+            I’m a Software Developer with 4+ years of experience building
+            business, e-commerce, ERP, CRM, and community platforms. My
+            strongest areas are React, Next.js, TypeScript, and frontend
+            architecture, with practical full-stack experience using
+            Node.js/Express.js, Supabase/PostgreSQL, MongoDB, and Stripe.
           </p>
           <p className="paragraph">
-            I’m passionate about creating clean, user-friendly interfaces and
-            applications that genuinely help people. I enjoy taking on projects
-            that challenge me to think differently and push my technical
-            boundaries. In my free time, I like learning new technologies,
-            playing games, watching movies & TV shows, and spending time with
-            friends.
+            Recently, I’ve worked on a public gift card e-commerce platform
+            with customer, admin, and partner workflows, an AI-assisted project
+            estimation tool, and a community platform with posts, chat, business
+            profiles, ads, maps, and Cloudflare R2 object storage. Before that,
+            I led frontend development on a multi-tenant ERP and contributed to
+            CRM and Field Service Management products.
           </p>
           <p className="paragraph">
-            Some of my core values are dedication, curiosity, empathy, and
-            continuous learning, which drive me to keep improving, take
-            ownership of my work, and contribute meaningfully to every team I’m
-            part of. I also value clear communication, reliability, and
-            building products that are both useful and thoughtfully crafted.
+            I focus on ownership, clean delivery, and turning complex business
+            workflows into usable, maintainable applications. I value clear
+            communication, reliability, continuous learning, and building
+            products that are both useful and thoughtfully crafted.
           </p>
         </div>
       </div>

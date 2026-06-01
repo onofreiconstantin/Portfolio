@@ -8,20 +8,27 @@ import languageLogo from "../resources/img/languageLogo.webp";
 import muiLogo from "../resources/img/muiLogo.webp";
 import nextLogo from "../resources/img/nextLogo.webp";
 import nodeLogo from "../resources/img/nodeLogo.webp";
+import expressLogo from "../resources/img/expressLogo.png";
 import reactLogo from "../resources/img/reactLogo.webp";
 import scssLogo from "../resources/img/scssLogo.webp";
 import tailwindLogo from "../resources/img/tailwindLogo.webp";
 import typescriptLogo from "../resources/img/typescriptLogo.webp";
 import shadcnLogo from "../resources/img/shadcnLogo.webp";
+import nestjsLogo from "../resources/img/nestjsLogo.webp";
 import dockerLogo from "../resources/img/dockerLogo.webp";
 import prismaLogo from "../resources/img/prismaLogo.webp";
 import drizzleLogo from "../resources/img/drizzleLogo.webp";
+import typeormLogo from "../resources/img/typeormLogo.webp";
 import postgresqlLogo from "../resources/img/postgresqlLogo.webp";
 import supabaseLogo from "../resources/img/supabaseLogo.webp";
 import mongodbLogo from "../resources/img/mongodbLogo.webp";
 import stripeLogo from "../resources/img/stripeLogo.webp";
 import validationLogo from "../resources/img/validationLogo.webp";
 import zustandLogo from "../resources/img/zustandLogo.webp";
+import reduxLogo from "../resources/img/reduxLogo.png";
+import awsS3Logo from "../resources/img/awsS3Logo.png";
+import cloudflareLogo from "../resources/img/cloudflareLogo.png";
+import vercelLogo from "../resources/img/vercelLogo.png";
 
 const Skills = () => {
   const parentRef = useRef(null);
@@ -102,7 +109,7 @@ const Skills = () => {
       logo: shadcnLogo,
       name: "Shadcn/UI",
       skills: [
-        "Proficient in using Shadcn/UI (bazat pe Radix și Tailwind) for building aesthetically pleasing and accessible UIs by composing customizable components.",
+        "Proficient in using Shadcn/UI, based on Radix and Tailwind, for building aesthetically pleasing and accessible UIs by composing customizable components.",
       ],
     },
     {
@@ -119,13 +126,27 @@ const Skills = () => {
       logo: nodeLogo,
       name: "Node.js",
       skills: [
-        "Basic understanding of the Node.js environment.",
-        "Limited experience with the Express.js framework, primarily from an academic project.",
-        "Actively working towards becoming a Full-Stack Developer.",
+        "Practical full-stack experience using Node.js for backend/API work and supporting server-side application workflows.",
+      ],
+    },
+    {
+      id: 11,
+      logo: expressLogo,
+      name: "Express.js",
+      skills: [
+        "Practical experience with Express.js for API endpoints and lightweight backend workflows in Node.js projects.",
       ],
     },
     {
       id: 12,
+      logo: nestjsLogo,
+      name: "NestJS",
+      skills: [
+        "Early experience with NestJS, focusing on building scalable and maintainable server-side applications using its modular, controller-service structure.",
+      ],
+    },
+    {
+      id: 13,
       logo: prismaLogo,
       name: "Prisma",
       skills: [
@@ -133,7 +154,7 @@ const Skills = () => {
       ],
     },
     {
-      id: 13,
+      id: 14,
       logo: drizzleLogo,
       name: "Drizzle ORM",
       skills: [
@@ -141,7 +162,15 @@ const Skills = () => {
       ],
     },
     {
-      id: 14,
+      id: 15,
+      logo: typeormLogo,
+      name: "TypeORM",
+      skills: [
+        "Familiarity with TypeORM for managing relational data in TypeScript applications, including defining entities and using repositories.",
+      ],
+    },
+    {
+      id: 16,
       logo: postgresqlLogo,
       name: "PostgreSQL",
       skills: [
@@ -149,7 +178,7 @@ const Skills = () => {
       ],
     },
     {
-      id: 15,
+      id: 17,
       logo: supabaseLogo,
       name: "Supabase",
       skills: [
@@ -158,7 +187,7 @@ const Skills = () => {
       ],
     },
     {
-      id: 16,
+      id: 18,
       logo: mongodbLogo,
       name: "MongoDB & Mongoose",
       skills: [
@@ -167,7 +196,7 @@ const Skills = () => {
       ],
     },
     {
-      id: 17,
+      id: 19,
       logo: validationLogo,
       name: "Validation & Forms",
       skills: [
@@ -176,15 +205,23 @@ const Skills = () => {
       ],
     },
     {
-      id: 21,
+      id: 20,
       logo: zustandLogo,
       name: "Zustand",
       skills: [
-        "Basic knowledge of Zustand providing a concise and practical way to manage shared state and simplify state logic",
+        "Basic knowledge of Zustand providing a concise and practical way to manage shared state and simplify state logic.",
       ],
     },
     {
-      id: 18,
+      id: 21,
+      logo: reduxLogo,
+      name: "Redux",
+      skills: [
+        "Basic knowledge of Redux for managing shared state and keeping state updates predictable.",
+      ],
+    },
+    {
+      id: 22,
       logo: stripeLogo,
       name: "Stripe",
       skills: [
@@ -192,7 +229,23 @@ const Skills = () => {
       ],
     },
     {
-      id: 19,
+      id: 23,
+      logo: awsS3Logo,
+      name: "AWS S3",
+      skills: [
+        "Practical experience using AWS S3 buckets for object storage, uploads, and serving application files.",
+      ],
+    },
+    {
+      id: 24,
+      logo: cloudflareLogo,
+      name: "Cloudflare R2",
+      skills: [
+        "Practical experience using Cloudflare R2 buckets for object storage and application media workflows.",
+      ],
+    },
+    {
+      id: 25,
       logo: gitLogo,
       name: "GIT & Version Control",
       skills: [
@@ -201,7 +254,7 @@ const Skills = () => {
       ],
     },
     {
-      id: 20,
+      id: 26,
       logo: dockerLogo,
       name: "Docker",
       skills: [
@@ -209,7 +262,15 @@ const Skills = () => {
       ],
     },
     {
-      id: 22,
+      id: 27,
+      logo: vercelLogo,
+      name: "Vercel",
+      skills: [
+        "Basic experience deploying and managing frontend and Next.js projects on Vercel.",
+      ],
+    },
+    {
+      id: 28,
       logo: languageLogo,
       name: "English Language Skills",
       skills: [
